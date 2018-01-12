@@ -1,47 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<link rel="icon" href="../../../../favicon.ico">
-	
-	<title>WP Rootz</title>
-	
-	<!-- Bootstrap core CSS -->
-	<link href="css/bootstrap.css" rel="stylesheet">
-	
-	<!-- Custom styles for this template -->
-	<link href="style.css" rel="stylesheet">
-	
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-	
-	<header>
-		<div class="blog-masthead">
-			<div class="container">
-				<nav class="nav">
-					<a class="nav-link active" href="#">Home</a>
-					<a class="nav-link" href="#">New features</a>
-					<a class="nav-link" href="#">Press</a>
-					<a class="nav-link" href="#">New hires</a>
-					<a class="nav-link" href="#">About</a>
-				</nav>
-			</div>
-		</div>
-		
-		<div class="blog-header">
-			<div class="container">
-				<h1 class="blog-title">The Bootstrap Blog</h1>
-				<p class="lead blog-description">An example blog template built with Bootstrap.</p>
-			</div>
-		</div>
-	</header>
-	
+<?php get_header(); ?>	
 	<main role="main" class="container">
 		
 		<div class="row">
@@ -150,13 +107,4 @@
 		
 	</main><!-- /.container -->
 	
-	<footer class="blog-footer">
-		<p>Diseño y Desarrollo Web por <a href="http://mtpublicidad.com.mx/" target="blank">MT Publicidad</a>.</p>
-	</footer>
-	
-	<!-- Bootstrap core JavaScript
-	================================================== -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="js/bootstrap.js"></script>
-</body>
-</html>
+	<?php get_footer(); ?>
