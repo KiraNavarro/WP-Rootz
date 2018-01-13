@@ -52,13 +52,27 @@ h6,
 	box-shadow: inset 0 -.1rem .25rem rgba(0, 0, 0, .1);
 }
 
+.blog-masthead h1, .blog-masthead p {
+	color: #fff;
+}
+
 /* Nav links */
+.blog-navbar {
+	margin-bottom: 25px;
+}
+
+.menu-item {
+  text-align: center;
+  padding: 0 1rem;
+}
+
 .nav-link {
 	position: relative;
 	padding: 1rem;
 	font-weight: 500;
 	color: #cdddeb;
 }
+
 .nav-link:hover,
 .nav-link:focus {
 	color: #fff;
@@ -98,7 +112,6 @@ h6,
 }
 .blog-description {
 	font-size: 1.1rem;
-	color: #999;
 }
 
 @media (min-width: 40em) {

@@ -25,20 +25,33 @@
 	<header>
 		<div class="blog-masthead">
 			<div class="container">
-				<nav class="nav">
-					<a class="nav-link active" href="#">Home</a>
-					<a class="nav-link" href="#">New features</a>
-					<a class="nav-link" href="#">Press</a>
-					<a class="nav-link" href="#">New hires</a>
-					<a class="nav-link" href="#">About</a>
-				</nav>
-			</div>
-		</div>
-		
-		<div class="blog-header">
-			<div class="container">
 				<h1 class="blog-title"><?php bloginfo('name'); ?></h1>
 				<p class="lead blog-description"><?php bloginfo('description'); ?></p>
+			</div>
+		</div>
+		<div class="blog-navbar">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="#">Navbar</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						
+						<?php
+							wp_nav_menu( array(
+								'menu'              => 'primary',
+								'theme_location'    => 'primary',
+								'depth'             => 2,
+								'container'         => '',
+								'menu_class'        => 'navbar-nav mr-auto',
+								'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+								'walker'            => new WP_Bootstrap_Navwalker())
+							);
+						?>
+					</div>
+				</nav>
 			</div>
 		</div>
 	</header>
