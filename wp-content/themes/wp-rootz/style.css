@@ -114,6 +114,12 @@ h6,
 	font-size: 1.1rem;
 }
 
+.post-thumb img{
+	width: 100%;
+	height: auto;
+	margin-bottom: 1rem;
+}
+
 @media (min-width: 40em) {
 	.blog-title {
 		font-size: 3.5rem;

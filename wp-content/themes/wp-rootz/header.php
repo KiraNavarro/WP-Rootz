@@ -38,7 +38,6 @@
 					</button>
 					
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						
 						<?php
 							wp_nav_menu( array(
 								'menu'              => 'primary',
