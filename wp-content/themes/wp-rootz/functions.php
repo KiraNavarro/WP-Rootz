@@ -16,7 +16,7 @@ function wpr_theme_setup(){
 add_action('after_setup_theme', 'wpr_theme_setup');
 
 // Customizer File 
-//require 'inc/customizer.php';
+require 'inc/customizer.php';
 
 // Remove Theme Editor
 function remove_editor_menu() {

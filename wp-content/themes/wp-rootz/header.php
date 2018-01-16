@@ -18,6 +18,11 @@
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<?php wp_head(); ?>
+	<style media="screen">
+		.showcase {
+			background: url( <?php echo get_theme_mod('showcase_image', get_template_directory_uri().'/img/showcase.jpg') ?>) no-repeat center center;
+		}
+	</style>
 </head>
 
 <body>

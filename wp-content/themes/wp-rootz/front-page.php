@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 <section class="showcase">
 	<div class="container">
-		<h1>Custom WP Rootz theme</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		<a href="#" class="btn btn-primary btn-lg">Read More</a>
+		<h1><?php echo get_theme_mod('showcase_heading', 'Custom WP Rootz theme'); ?></h1>
+		<p><?php echo get_theme_mod('showcase_text', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'); ?></p>
+		<a href="<?php echo get_theme_mod('showcase_btn_url', 'http://test.com'); ?>" class="btn btn-primary btn-lg"><?php echo get_theme_mod('showcase_btn_text', 'Read More'); ?></a>
 	</div>
 </section>
 
