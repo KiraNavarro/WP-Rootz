@@ -6,7 +6,7 @@
 	<meta name="description" content="<?php bloginfo('descritpion'); ?>" >
 	<link rel="icon" href="../../../../favicon.ico">
 	<title>
-		<?php bloginfo('name'); ?> | 
+		<?php bloginfo('name'); ?>
 		<?php is_front_page() ? bloginfo('description') : wp_title(); ?>
 	</title>
 	<!-- Bootstrap core CSS -->
@@ -26,36 +26,37 @@
 </head>
 
 <body>
-	
-	<header>
-		<div class="blog-masthead">
-			<div class="container">
-				<h1 class="blog-title"><?php bloginfo('name'); ?></h1>
-				<p class="lead blog-description"><?php bloginfo('description'); ?></p>
+	<header class="showcase">
+		<div class="container">
+			<div class="social-media">
+				<a class="social-item" href="#">
+					<img src="<?php bloginfo('template_url'); ?>/img/contact.png" alt="Contact">
+				</a>
+				<a class="social-item" href="https://www.facebook.com/Estrategiahipotecaria/" target="_blank">
+					<img src="<?php bloginfo('template_url'); ?>/img/facebook.png" alt="Facebook">
+				</a>
 			</div>
-		</div>
-		<div class="blog-navbar">
-			<div class="container">
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					<a class="navbar-brand" href="#">Navbar</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<?php
-							wp_nav_menu( array(
-								'menu'              => 'primary',
-								'theme_location'    => 'primary',
-								'depth'             => 2,
-								'container'         => '',
-								'menu_class'        => 'navbar-nav mr-auto',
-								'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-								'walker'            => new WP_Bootstrap_Navwalker())
-							);
-						?>
-					</div>
-				</nav>
+			<div class="site-logo">
+				<img src="<?php bloginfo('template_url'); ?>/img/site-logo.png" alt="Estrategia Hipotecaria">
 			</div>
 		</div>
 	</header>
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<?php
+				wp_nav_menu( array(
+					'menu'              => 'primary',
+					'theme_location'    => 'primary',
+					'depth'             => 2,
+					'container'         => '',
+					'menu_class'        => 'navbar-nav mr-auto',
+					'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+					'walker'            => new WP_Bootstrap_Navwalker())
+				);
+			?>
+		</div>
+	</nav>

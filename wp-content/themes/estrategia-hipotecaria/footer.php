@@ -1,6 +1,17 @@
 	<footer class="blog-footer">
-		<p>&copy; <?php echo Date('Y'); ?> - <?php bloginfo('name'); ?></p>
-		<p>Diseño y Desarrollo Web por <a href="http://mtpublicidad.com.mx/" target="blank">MT Publicidad</a></p>
+		<div class="social-media">
+			<a class="social-item" href="#">
+				<img src="<?php bloginfo('template_url'); ?>/img/contact.png" alt="Contact">
+			</a>
+			<a class="social-item" href="https://www.facebook.com/Estrategiahipotecaria/" target="_blank">
+				<img src="<?php bloginfo('template_url'); ?>/img/facebook.png" alt="Facebook">
+			</a>
+		</div>
+		<div class="site-info">
+			<p class="footer-item"><?php echo Date('Y'); ?> - <?php bloginfo('name'); ?></p>
+			<a class="footer-item" href="#" target="blank">Aviso de Privacidad</a>
+			<p class="footer-item">Diseño y Desarrollo Web por <a href="http://mtpublicidad.com.mx/" target="blank">MT Publicidad</a>.</p>
+		</div>
 	</footer>
 	<?php wp_footer(); ?>
 	<!-- Bootstrap core JavaScript

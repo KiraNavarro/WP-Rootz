@@ -18,79 +18,107 @@
 			)
 		));
 		
-		//** Showcase **//
+		//** Showcase / Header **// 
 		
 		//Set section
 		$wp_customize->add_section('showcase', array(
-			'title' => __('Showcase', 'wp-rootz'),
-			'description' => sprintf(__('Options for showcase', 'wp-rootz')),
+			'title' => __('Header'),
+			'description' => sprintf(__('Configurar header')),
 			'priority' => 130
 		));
 		
-		//Showcase Heading
-		$wp_customize->add_setting('showcase_heading', array(
-			'default' => _x('Custom Bootstrap Wordpress theme', 'wp-rootz'),
-			'type' => 'theme_mod'
-		));
-		
-		$wp_customize->add_control('showcase_heading', array(
-			'label' => __('Heading', 'wp-rootz'),
-			'section' => 'showcase',
-			'priority' => 1
-		));
-		
-		//Showcase Text
-		$wp_customize->add_setting('showcase_text', array(
-			'default' => _x('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'wp-rootz'),
-			'type' => 'theme_mod'
-		));
-		
-		$wp_customize->add_control('showcase_text', array(
-			'label' => __('Text', 'wp-rootz'),
-			'section' => 'showcase',
-			'priority' => 2
-		));
-		
-		//Showcase Button Text
-		$wp_customize->add_setting('showcase_btn_text', array(
-			'default' => _x('Read More', 'wp-rootz'),
-			'type' => 'theme_mod'
-		));
-		
-		$wp_customize->add_control('showcase_btn_text', array(
-			'label' => __('Button Text', 'wp-rootz'),
-			'section' => 'showcase',
-			'priority' => 3
-		));
-		
-		//Showcase Button URL
-		$wp_customize->add_setting('showcase_btn_url', array(
-			'default' => _x('http://test.com', 'wp-rootz'),
-			'type' => 'theme_mod'
-		));
-		
-		$wp_customize->add_control('showcase_btn_url', array(
-			'label' => __('Button URL', 'wp-rootz'),
-			'section' => 'showcase',
-			'priority' => 4
-		));
-		
-		//Showcase Image
-		$wp_customize->add_setting('showcase_image', array(
-			'default' => get_template_directory_uri().'/img/showcase.jpg', 'wp-rootz',
+		// Showcase image 1
+		$wp_customize->add_setting('showcase_image_1', array(
+			'default' => get_template_directory_uri().'/img/showcase.jpg',
 			'type' => 'theme_mod'
 		));
 		
 		$wp_customize->add_control(new WP_Customize_Image_Control(
-			$wp_customize, 'logo_image',
+			$wp_customize, 'showcase_image_1',
 			array(
-				'label' => __('Showcase Image', 'wp-rootz'),
+				'label' => __('Imagen 1'),
 				'section' => 'showcase',
-				'settings' => 'showcase_image',
+				'settings' => 'showcase_image_1',
 				'priority' => 5
 			)
 		));
 		
+		// Showcase image 2
+		$wp_customize->add_setting('showcase_image_2', array(
+			'default' => get_template_directory_uri().'/img/showcase-2.jpg',
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control(new WP_Customize_Image_Control(
+			$wp_customize, 'showcase_image_2',
+			array(
+				'label' => __('Imagen 2'),
+				'section' => 'showcase',
+				'settings' => 'showcase_image_2',
+				'priority' => 5
+			)
+		));
+		
+		// Showcase image 3
+		$wp_customize->add_setting('showcase_image_3', array(
+			'default' => get_template_directory_uri().'/img/showcase-3.jpg',
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control(new WP_Customize_Image_Control(
+			$wp_customize, 'showcase_image_3',
+			array(
+				'label' => __('Imagen 3'),
+				'section' => 'showcase',
+				'settings' => 'showcase_image_3',
+				'priority' => 5
+			)
+		));
+		
+		//** Intro **//
+		
+		//Set section
+		$wp_customize->add_section('intro', array(
+			'title' => __('Intro'),
+			'description' => sprintf(__('Options for showcase')),
+			'priority' => 130
+		));
+		
+		//Showcase Heading
+		$wp_customize->add_setting('intro_heading', array(
+			'default' => _x('Dinero trabajando... a tu favor.'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('intro_heading', array(
+			'label' => __('Título'),
+			'section' => 'intro',
+			'priority' => 1
+		));
+		
+		//Intro Text 1
+		$wp_customize->add_setting('intro_text_1', array(
+			'default' => _x('Estrategia Hipotecaria se conforma por un equipo de expertos en asesoría y gestión de créditos hipotecarios y PyMEs, ofrecemos un servicio confiable, cálido, profesional y sobretodo fácil de entender.'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('intro_text_1', array(
+			'label' => __('Texto 1'),
+			'section' => 'intro',
+			'priority' => 2
+		));
+		
+		//Intro Text 2
+		$wp_customize->add_setting('intro_text_2', array(
+			'default' => _x('Nuestra experiencia y la relación directa con las principales instituciones financieras del país nos permiten poner a su alcance las mejores opciones de financiamiento de acuerdo a su perfil, logrando el éxito de su operación en el menor tiempo posible.'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('intro_text_2', array(
+			'label' => __('Texto 2'),
+			'section' => 'intro',
+			'priority' => 3
+		));
 		
 		//** About US **//
 		

@@ -15,6 +15,11 @@ Version: 1.0
 	src: url(fonts/HelveticaNeueLTPro-Lt.otf);
 }
 
+@font-face {
+	font-family: primary-font-bold;
+	src: url(fonts/HelveticaNeueLTPro-Blk.otf);
+}
+
 @media (min-width: 48em) {
 	html {
 		font-size: 18px;
@@ -55,33 +60,42 @@ h1 {
 	padding: 0;
 }
 
-.blog-navbar {
-	margin-bottom: 25px;
+.dropdown-menu {
+	background-color: #37b54a;
+	border: none;
+	border-radius: 0;
+	top: 90%;
 }
 
-.menu-item {
-  text-align: center;
-  padding: 0 1rem;
+.dropdown-menu .active {
+	transform: skew(0deg);
 }
 
-.nav-link {
-	position: relative;
+.dropdown-menu .active a {
+	display: block;
+	transform: skew(0deg);
+}
+
+.menu-item  {
 	padding: 1rem;
-	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.active {
+	background-color: #021233;
+	transform: skew(-20deg);
+}
+
+.active a {
+	display: block;
+	transform: skew(20deg);
+}
+
+.navbar-dark .navbar-nav .menu-item a {
 	color: #fff;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-	color: #fff;
-	background-color: transparent;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-	color: #fff;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .menu-item a:hover {
 	color: rgba(255, 255, 255, 0.8);
 }
 
@@ -99,39 +113,17 @@ h1 {
 	}
 }
 
-/* Active state gets a caret at the bottom */
-.nav-link.active {
-	color: #fff;
-}
-
-.nav-link.active::after {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	margin-left: -.3rem;
-	vertical-align: middle;
-	content: "";
-	border-right: .3rem solid transparent;
-	border-bottom: .3rem solid;
-	border-left: .3rem solid transparent;
-}
-
-.active {
-	background-color: #021233;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-	transform: skew(-20deg);
-}
-
-.active a{
-	transform: skew(20deg);
-}
-
 /*
 * Blog name and description
 */
+
+.blog-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 4em;
+}
+
 .blog-header {
 	padding-bottom: 1.25rem;
 	margin-bottom: 2rem;
@@ -158,46 +150,34 @@ h1 {
 	}
 }
 
-/*
-* Main column and sidebar layout
-*/
-
-/* Sidebar modules for boxing content */
-.sidebar-module {
-	padding: 1rem;
-}
-.sidebar-module-inset {
-	padding: 1rem;
-	background-color: #f5f5f5;
-	border-radius: .25rem;
-}
-.sidebar-module-inset p:last-child,
-.sidebar-module-inset ul:last-child,
-.sidebar-module-inset ol:last-child {
-	margin-bottom: 0;
-}
-
-/* Pagination */
-.blog-pagination {
-	margin-bottom: 4rem;
-}
-.blog-pagination > .btn {
-	border-radius: 2rem;
-}
-
-/*
-* Blog posts
-*/
 .blog-post {
+	width: 80%;
+	margin-top: 2em;
 	margin-bottom: 4rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
+
 .blog-post-title {
 	margin-bottom: .25rem;
-	font-size: 2.5rem;
+	color: #37b54a;
+	font-size: 1.3rem;
+	font-family: primary-font-bold;
 }
-.blog-post-meta {
-	margin-bottom: 1.25rem;
-	color: #999;
+
+.blog-post img{
+	width: 100px;
+	margin-right: 50px;
+}
+
+.blog-post h3 {
+	font-size: .8rem;
+	font-family: primary-font-bold;
+}
+
+.blog-post a {
+	color: #37b54a;
 }
 
 /*
@@ -237,13 +217,31 @@ h1 {
 	margin-bottom: 0;
 }
 
-.social-item, .footer-item {
-	margin-left: 1em;
+.footer-item {
 	margin-right: 1em;
+	margin-left: 1em;
+}
+
+.social-item {
+	margin-right: 1.5em;
+}
+
+.social-item img, .footer-item img {
+	width: 40px;
+	height: 40px;
+}
+
+.social-item img:hover, .footer-item img:hover {
+	transform: scale(1.1);
+}
+
+.footer-item a, a.footer-item {
+	text-decoration: underline;
 }
 
 .blog-footer .social-media {
 	background-color: #021233;
+	padding-bottom: 1em;
 }
 
 .blog-footer .site-info {
@@ -269,9 +267,12 @@ h1 {
 }
 
 .site-logo {
-	background-color: #ccc;
-	width: 300px;
-	height: 200px;
+	text-align: left;
+	margin-top: 70px;
+}
+
+.site-logo img{
+	width: 450px;
 }
 
 .showcase h1 {
@@ -285,82 +286,13 @@ h1 {
 	margin-bottom: 50px;
 }
 
-/* Boxes */
-
-.boxes {
-	text-align: center;
-	background-color: #fff;
-	margin-bottom: 30px;
-}
-
-.box .fa {
-	font-size: 45px !important;
-	margin-bottom: 10px;
-}
-
-.box {
-	padding: 15px;
-	border: #ccc 1px solid;
-}
-
-/* Comments */
-
-.comments {
-	border: 1px #ccc solid;
-	padding: 10px;
-	margin-bottom: 20px;
-	margin-top: 10px;
-}
-
-.comments h3, .comments h2 {
-	background: #f4f4f4;
-	color: #333;
-	padding: 5px;
-}
-
-.comment-body {
-	border: #ccc solid 1px;
-	margin-bottom: 10px;
-	padding: 20px 10px;
-}
-
-.comment-meta {
-	background: #428bca;
-	color: #fff;
-	padding: 10px;
-	overflow: auto;
-}
-
-.comment-meta a {
-	color: #fff;
-}
-
-.comment-meta img {
-	float: left;
-	margin-right: 10px;
-}
-
-.comment-reply-link {
-	background: #428bca;
-	color: #fff;
-	display: inline-block;
-	padding: 10px 15px;
-}
-
-.comment-form input, .comment-form textarea {
-	width: 100%;
-	padding: 4px;
-	border: #ccc solid 1px;
-	margin-bottom: 15px;
-}
-
 /* Sections */
 
 section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 3em; 
+	margin-bottom: 4em; 
 }
 
 .section-title {
@@ -368,6 +300,10 @@ section {
 	flex-direction: row;
 	justify-content: center;
 	margin: 2em 0;
+}
+
+.section-title h1 {
+	font-family: primary-font-bold;
 }
 
 #triangle-left {
@@ -391,6 +327,11 @@ section {
 .section-text {
 	width: 60%;
 	text-align: center;
+	color: #000;
+}
+
+.section-text b {
+	font-weight: 600;
 }
 
 .services-row {
@@ -406,9 +347,19 @@ section {
 
 .service-item {
 	width: 100%;
-	text-align: center;
 	padding: 1em;
 	border: 1px solid #fff;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.service-item img {
+	width: 40px;
+	height: 40px;
+	margin-left: .7em;
 }
 
 .services-color-1 {
@@ -428,7 +379,7 @@ section {
 }
 
 .section-alianzas {
-	width: 80%;
+	width: 90%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -436,11 +387,42 @@ section {
 }
 
 .alianzas-item {
-	background-color: #ccc;
-	padding: 1em;
-	margin: .5em;
-	width: 150px;
+	margin: .9em .7em;
+	width: 220px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
+
+.alianzas-item img {
+	max-width: 200px;
+	max-height: 70px;
+}
+
+/* Pages */
+
+.page-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 4em;
+}
+
+.page {
+	width: 80%;
+}
+
+.page h3 {
+	font-size: .8rem;
+	font-family: primary-font-bold;
+}
+
+.page a {
+	color: #37b54a;
+}
+
+
 
 
 
