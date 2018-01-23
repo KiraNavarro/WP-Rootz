@@ -11,7 +11,7 @@
 		$wp_customize->add_control(new WP_Customize_Image_Control(
 			$wp_customize, 'logo_image',
 			array(
-				'label' => __('Site Logo', 'wp-rootz'),
+				'label' => __('Site Logo', 'estrategia-hipotecaria'),
 				'section' => 'title_tagline',
 				'settings' => 'logo_image',
 				'priority' => 10
@@ -22,8 +22,8 @@
 		
 		//Set section
 		$wp_customize->add_section('showcase', array(
-			'title' => __('Header'),
-			'description' => sprintf(__('Configurar header')),
+			'title' => __('Header', 'estrategia-hipotecaria'),
+			'description' => sprintf(__('Configurar header', 'estrategia-hipotecaria')),
 			'priority' => 130
 		));
 		
@@ -36,11 +36,23 @@
 		$wp_customize->add_control(new WP_Customize_Image_Control(
 			$wp_customize, 'showcase_image_1',
 			array(
-				'label' => __('Imagen 1'),
+				'label' => __('Imagen Header', 'estrategia-hipotecaria'),
 				'section' => 'showcase',
 				'settings' => 'showcase_image_1',
-				'priority' => 5
+				'priority' => 1
 			)
+		));
+		
+		//Showcase Heading 1
+		$wp_customize->add_setting('showcase_heading_1', array(
+			'default' => _x('', 'estrategia-hipotecaria'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('showcase_heading_1', array(
+			'label' => __('Subtítulo Header', 'estrategia-hipotecaria'),
+			'section' => 'showcase',
+			'priority' => 2
 		));
 		
 		// Showcase image 2
@@ -52,11 +64,23 @@
 		$wp_customize->add_control(new WP_Customize_Image_Control(
 			$wp_customize, 'showcase_image_2',
 			array(
-				'label' => __('Imagen 2'),
+				'label' => __('Imagen Contacto', 'estrategia-hipotecaria'),
 				'section' => 'showcase',
 				'settings' => 'showcase_image_2',
-				'priority' => 5
+				'priority' => 3
 			)
+		));
+		
+		//Showcase Heading 2
+		$wp_customize->add_setting('showcase_heading_2', array(
+			'default' => _x('Gestionando sueños.', 'estrategia-hipotecaria'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('showcase_heading_2', array(
+			'label' => __('SubTítulo Contacto', 'estrategia-hipotecaria'),
+			'section' => 'showcase',
+			'priority' => 4
 		));
 		
 		// Showcase image 3
@@ -68,60 +92,277 @@
 		$wp_customize->add_control(new WP_Customize_Image_Control(
 			$wp_customize, 'showcase_image_3',
 			array(
-				'label' => __('Imagen 3'),
+				'label' => __('Imagen Productos', 'estrategia-hipotecaria'),
 				'section' => 'showcase',
 				'settings' => 'showcase_image_3',
 				'priority' => 5
 			)
 		));
 		
+		//Showcase Heading 3
+		$wp_customize->add_setting('showcase_heading_3', array(
+			'default' => _x('Alcanzar tus sueños nunca fue tan fácil.', 'estrategia-hipotecaria'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('showcase_heading_3', array(
+			'label' => __('Subtítulo Productos', 'estrategia-hipotecaria'),
+			'section' => 'showcase',
+			'priority' => 6
+		));
+		
 		//** Intro **//
 		
 		//Set section
 		$wp_customize->add_section('intro', array(
-			'title' => __('Intro'),
-			'description' => sprintf(__('Options for showcase')),
+			'title' => __('Intro', 'estrategia-hipotecaria'),
+			'description' => sprintf(__('Options for showcase', 'estrategia-hipotecaria')),
 			'priority' => 130
 		));
 		
-		//Showcase Heading
+		//Intro Heading
 		$wp_customize->add_setting('intro_heading', array(
-			'default' => _x('Dinero trabajando... a tu favor.'),
+			'default' => _x('Dinero trabajando... a tu favor.', 'estrategia-hipotecaria'),
 			'type' => 'theme_mod'
 		));
 		
 		$wp_customize->add_control('intro_heading', array(
-			'label' => __('Título'),
+			'label' => __('Título', 'estrategia-hipotecaria'),
 			'section' => 'intro',
 			'priority' => 1
 		));
 		
 		//Intro Text 1
 		$wp_customize->add_setting('intro_text_1', array(
-			'default' => _x('Estrategia Hipotecaria se conforma por un equipo de expertos en asesoría y gestión de créditos hipotecarios y PyMEs, ofrecemos un servicio confiable, cálido, profesional y sobretodo fácil de entender.'),
+			'default' => _x('Estrategia Hipotecaria se conforma por un equipo de expertos en asesoría y gestión de créditos hipotecarios y PyMEs, ofrecemos un servicio confiable, cálido, profesional y sobretodo fácil de entender.', 'estrategia-hipotecaria'),
 			'type' => 'theme_mod'
 		));
 		
 		$wp_customize->add_control('intro_text_1', array(
-			'label' => __('Texto 1'),
+			'label' => __('Texto 1', 'estrategia-hipotecaria'),
 			'section' => 'intro',
 			'priority' => 2
 		));
 		
 		//Intro Text 2
 		$wp_customize->add_setting('intro_text_2', array(
-			'default' => _x('Nuestra experiencia y la relación directa con las principales instituciones financieras del país nos permiten poner a su alcance las mejores opciones de financiamiento de acuerdo a su perfil, logrando el éxito de su operación en el menor tiempo posible.'),
+			'default' => _x('Nuestra experiencia y la relación directa con las principales instituciones financieras del país nos permiten poner a su alcance las mejores opciones de financiamiento de acuerdo a su perfil, logrando el éxito de su operación en el menor tiempo posible.', 'estrategia-hipotecaria'),
 			'type' => 'theme_mod'
 		));
 		
 		$wp_customize->add_control('intro_text_2', array(
-			'label' => __('Texto 2'),
+			'label' => __('Texto 2', 'estrategia-hipotecaria'),
 			'section' => 'intro',
 			'priority' => 3
 		));
 		
-		//** About US **//
+		//** Servicios **//
 		
+		//Set section
+		$wp_customize->add_section('servicios', array(
+			'title' => __('Servicios', 'estrategia-hipotecaria'),
+			'description' => sprintf(__('Configuración Servicios', 'estrategia-hipotecaria')),
+			'priority' => 130
+		));
+		
+		//Servicios Heading 1
+		$wp_customize->add_setting('servicios_heading_1', array(
+			'default' => _x('Crédito de Adquisición', 'estrategia-hipotecaria'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('servicios_heading_1', array(
+			'label' => __('Servicio 1', 'estrategia-hipotecaria'),
+			'section' => 'servicios',
+			'priority' => 1
+		));
+		
+		// Servicios icon 1
+		$wp_customize->add_setting('servicios_icon_1', array(
+			'default' => get_template_directory_uri().'/img/credito-adquisicion-icon.png',
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control(new WP_Customize_Image_Control(
+			$wp_customize, 'servicios_icon_1',
+			array(
+				'label' => __('Icono servicio 1', 'estrategia-hipotecaria'),
+				'section' => 'servicios',
+				'settings' => 'servicios_icon_1',
+				'priority' => 2
+			)
+		));
+		
+		//Servicios Heading 2
+		$wp_customize->add_setting('servicios_heading_2', array(
+			'default' => _x('Sustitución de Hipoteca', 'estrategia-hipotecaria'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('servicios_heading_2', array(
+			'label' => __('Servicio 2', 'estrategia-hipotecaria'),
+			'section' => 'servicios',
+			'priority' => 3
+		));
+		
+		// Servicios icon 2
+		$wp_customize->add_setting('servicios_icon_2', array(
+			'default' => get_template_directory_uri().'/img/sustitucion-hipoteca-icon.png',
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control(new WP_Customize_Image_Control(
+			$wp_customize, 'servicios_icon_2',
+			array(
+				'label' => __('Icono servicio 2', 'estrategia-hipotecaria'),
+				'section' => 'servicios',
+				'settings' => 'servicios_icon_2',
+				'priority' => 4
+			)
+		));
+		
+		//Servicios Heading 3
+		$wp_customize->add_setting('servicios_heading_3', array(
+			'default' => _x('Crédito de Liquidez', 'estrategia-hipotecaria'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('servicios_heading_3', array(
+			'label' => __('Servicio 3', 'estrategia-hipotecaria'),
+			'section' => 'servicios',
+			'priority' => 6
+		));
+		
+		// Servicios icon 2
+		$wp_customize->add_setting('servicios_icon_3', array(
+			'default' => get_template_directory_uri().'/img/credito-liquidez-icon.png',
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control(new WP_Customize_Image_Control(
+			$wp_customize, 'servicios_icon_3',
+			array(
+				'label' => __('Icono servicio 3', 'estrategia-hipotecaria'),
+				'section' => 'servicios',
+				'settings' => 'servicios_icon_3',
+				'priority' => 7
+			)
+		));
+		
+		//Servicios Heading 4
+		$wp_customize->add_setting('servicios_heading_4', array(
+			'default' => _x('Crédito PyME', 'estrategia-hipotecaria'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('servicios_heading_4', array(
+			'label' => __('Servicio 4', 'estrategia-hipotecaria'),
+			'section' => 'servicios',
+			'priority' => 8
+		));
+		
+		// Servicios icon 4
+		$wp_customize->add_setting('servicios_icon_4', array(
+			'default' => get_template_directory_uri().'/img/credito-pyme-icon.png',
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control(new WP_Customize_Image_Control(
+			$wp_customize, 'servicios_icon_4',
+			array(
+				'label' => __('Icono servicio 4', 'estrategia-hipotecaria'),
+				'section' => 'servicios',
+				'settings' => 'servicios_icon_4',
+				'priority' => 9
+			)
+		));
+		
+		//Servicios Heading 5
+		$wp_customize->add_setting('servicios_heading_5', array(
+			'default' => _x('Adelanto', 'estrategia-hipotecaria'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('servicios_heading_5', array(
+			'label' => __('Servicio 4', 'estrategia-hipotecaria'),
+			'section' => 'servicios',
+			'priority' => 10
+		));
+		
+		// Servicios icon 5
+		$wp_customize->add_setting('servicios_icon_5', array(
+			'default' => get_template_directory_uri().'/img/adelanto-icon.png',
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control(new WP_Customize_Image_Control(
+			$wp_customize, 'servicios_icon_5',
+			array(
+				'label' => __('Icono servicio 5', 'estrategia-hipotecaria'),
+				'section' => 'servicios',
+				'settings' => 'servicios_icon_5',
+				'priority' => 11
+			)
+		));
+		
+		//Servicios Heading 6
+		$wp_customize->add_setting('servicios_heading_6', array(
+			'default' => _x('Crédito Nómina', 'estrategia-hipotecaria'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('servicios_heading_6', array(
+			'label' => __('Servicio 6', 'estrategia-hipotecaria'),
+			'section' => 'servicios',
+			'priority' => 12
+		));
+		
+		// Servicios icon 6
+		$wp_customize->add_setting('servicios_icon_6', array(
+			'default' => get_template_directory_uri().'/img/credito-nomina-icon.png',
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control(new WP_Customize_Image_Control(
+			$wp_customize, 'servicios_icon_6',
+			array(
+				'label' => __('Icono servicio 6', 'estrategia-hipotecaria'),
+				'section' => 'servicios',
+				'settings' => 'servicios_icon_6',
+				'priority' => 13
+			)
+		));
+		
+		//Servicios Heading 7
+		$wp_customize->add_setting('servicios_heading_7', array(
+			'default' => _x('Créditos Personales', 'estrategia-hipotecaria'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('servicios_heading_7', array(
+			'label' => __('Servicio 7', 'estrategia-hipotecaria'),
+			'section' => 'servicios',
+			'priority' => 14
+		));
+		
+		// Servicios icon 7
+		$wp_customize->add_setting('servicios_icon_7', array(
+			'default' => get_template_directory_uri().'/img/credito-personal-icon.png',
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control(new WP_Customize_Image_Control(
+			$wp_customize, 'servicios_icon_7',
+			array(
+				'label' => __('Icono servicio 7', 'estrategia-hipotecaria'),
+				'section' => 'servicios',
+				'settings' => 'servicios_icon_7',
+				'priority' => 15
+			)
+		));
+		
+		//** About US **//
+		/*
 		//Set section 
 		$wp_customize->add_section('about', array(
 			'title' => __('Sobre Nosotros', 'wp-rootz'),
@@ -181,10 +422,10 @@
 				'settings' => 'about_image',
 				'priority' => 4
 			)
-		));
+		));*/
 		
 		//** Contact **//
-		
+		/*
 		//Set section
 		$wp_customize->add_section('contact', array(
 			'title' => __('Contacto', 'wp-rootz'),
@@ -227,36 +468,24 @@
 			'section' => 'contact',
 			'priority' => 1
 		));
-		
+		*/
 		//** Social Networks **//
 		
 		//Set section
 		$wp_customize->add_section('social_networks', array(
-			'title' => __('Redes Sociales', 'wp-rootz'),
-			'description' => sprintf(__('Options for Social Networks', 'wp-rootz')),
+			'title' => __('Redes Sociales', 'estrategia-hipotecaria'),
+			'description' => sprintf(__('Options for Social Networks', 'estrategia-hipotecaria')),
 			'priority' => 140
 		));
 		
 		// Facebook
 		$wp_customize->add_setting('facebook', array(
-			'default' => _x('https://www.facebook.com/', 'wp-rootz'),
+			'default' => _x('https://www.facebook.com/Estrategiahipotecaria/', 'estrategia-hipotecaria'),
 			'type' => 'theme_mod'
 		));
 		
 		$wp_customize->add_control('facebook', array(
-			'label' => __('Facebook', 'wp-rootz'),
-			'section' => 'social_networks',
-			'priority' => 1
-		));
-		
-		// Facebook
-		$wp_customize->add_setting('linkedin', array(
-			'default' => _x('https://www.linkedin.com/', 'wp-rootz'),
-			'type' => 'theme_mod'
-		));
-		
-		$wp_customize->add_control('linkedin', array(
-			'label' => __('LinkedIn', 'wp-rootz'),
+			'label' => __('Facebook', 'estrategia-hipotecaria'),
 			'section' => 'social_networks',
 			'priority' => 1
 		));

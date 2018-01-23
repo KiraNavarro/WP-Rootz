@@ -20,7 +20,36 @@
 	<?php wp_head(); ?>
 	<style media="screen">
 		.showcase {
-			background: url( <?php echo get_theme_mod('showcase_image', get_template_directory_uri().'/img/showcase.jpg') ?>) no-repeat center center;
+			background: url( 
+				<?php if (is_page('Contacto')) : ?>
+					<?php echo get_theme_mod('showcase_image_2', get_template_directory_uri().'/img/showcase-2.jpg')?>
+				<?php elseif (is_home()) : ?>
+					<?php echo get_theme_mod('showcase_image_3', get_template_directory_uri().'/img/showcase-3.jpg')?>
+				<?php else : ?>
+					<?php echo get_theme_mod('showcase_image_1', get_template_directory_uri().'/img/showcase.jpg')?>
+				<?php endif; ?>) no-repeat center center;
+		}
+		
+		.site-logo {
+			<?php if (is_page('Contacto'))  : ?>
+				height: 100%;
+				align-content: space-between; 
+			<?php elseif (is_home()) : ?>
+				height: 100%;
+				align-content: space-between; 
+			<?php else : ?>
+				padding-top: 70px; 
+			<?php endif; ?>
+		}
+		
+		.site-logo img{
+			<?php if (is_page('Contacto'))  : ?>
+				width: 300px;
+			<?php elseif (is_home()) : ?>
+				width: 300px;
+			<?php else : ?>
+				width: 500px;
+			<?php endif; ?>
 		}
 	</style>
 </head>
@@ -28,16 +57,23 @@
 <body>
 	<header class="showcase">
 		<div class="container">
-			<div class="social-media">
-				<a class="social-item" href="#">
-					<img src="<?php bloginfo('template_url'); ?>/img/contact.png" alt="Contact">
+			<div class="site-logo">
+				<a href="<?php echo get_home_url(); ?>">
+					<img src="<?php echo get_theme_mod('logo_image', get_template_directory_uri().'/img/site-logo.png') ?>" alt="Estrategia Hipotecaria">
 				</a>
-				<a class="social-item" href="https://www.facebook.com/Estrategiahipotecaria/" target="_blank">
+				<?php if (is_page('Contacto')) : ?>
+					<h3><?php echo get_theme_mod('showcase_heading_2', 'Gestionando sueños.'); ?></h3>
+				<?php elseif (is_home()) : ?>
+					<h3><?php echo get_theme_mod('showcase_heading_3', 'Alcanzar tus sueños nunca fue tan fácil.'); ?></h3>
+				<?php endif; ?>
+			</div>
+			<div class="social-media">
+				<a class="social-item" href="<?php echo get_permalink( get_page_by_path( 'Contacto' ) ); ?>">
+					<img src="<?php bloginfo('template_url'); ?>/img/contact.png" alt="Contacto">
+				</a>
+				<a class="social-item" href="<?php echo get_theme_mod('facebook', 'https://www.facebook.com/Estrategiahipotecaria/'); ?>" target="_blank">
 					<img src="<?php bloginfo('template_url'); ?>/img/facebook.png" alt="Facebook">
 				</a>
-			</div>
-			<div class="site-logo">
-				<img src="<?php bloginfo('template_url'); ?>/img/site-logo.png" alt="Estrategia Hipotecaria">
 			</div>
 		</div>
 	</header>

@@ -21,36 +21,36 @@
 		<div class="section-services">
 			<div class="services-row">
 				<div class="service-item services-color-1">
-					<h2>Crédito de Adquisición</h2>
-					<img src="<?php bloginfo('template_url'); ?>/img/credito-adquisicion-icon.png" alt="Crédito de Adquisición">
+					<h2><?php echo get_theme_mod('servicios_heading_1', 'Crédito de Adquisición'); ?></h2>
+					<img src="<?php echo get_theme_mod('servicios_icon_1', get_template_directory_uri().'/img/credito-adquisicion-icon.png')?>" alt="<?php echo get_theme_mod('servicios_heading_1', 'Crédito de Adquisición'); ?>">
 				</div>
 			</div>
 			<div class="services-row">
 				<div class="service-item services-color-2">
-					<h2>Sustitución de Hipoteca</h2>
-					<img src="<?php bloginfo('template_url'); ?>/img/sustitucion-hipoteca-icon.png" alt="Sustitución de Hipoteca">
+					<h2><?php echo get_theme_mod('servicios_heading_2', 'Sustitución de Hipoteca'); ?></h2>
+					<img src="<?php echo get_theme_mod('servicios_icon_2', get_template_directory_uri().'/img/sustitucion-hipoteca-icon.png')?>" alt="<?php echo get_theme_mod('servicios_heading_2', 'Sustitución de Hipoteca'); ?>">
 				</div>
 				<div class="service-item services-color-3">
-					<h2>Crédito de Liquidez</h2>
-					<img src="<?php bloginfo('template_url'); ?>/img/credito-liquidez-icon.png" alt="Crédito de Liquidez">
+					<h2><?php echo get_theme_mod('servicios_heading_3', 'Crédito de Liquidez'); ?></h2>
+					<img src="<?php echo get_theme_mod('servicios_icon_3', get_template_directory_uri().'/img/credito-liquidez-icon.png')?>" alt="<?php echo get_theme_mod('servicios_heading_3', 'Crédito de Liquidez'); ?>">
 				</div>
 				<div class="service-item services-color-4">
-					<h2>Crédito PyME</h2>
-					<img src="<?php bloginfo('template_url'); ?>/img/credito-pyme-icon.png" alt="Crédito PyME">
+					<h2><?php echo get_theme_mod('servicios_heading_4', 'Crédito PyME'); ?></h2>
+					<img src="<?php echo get_theme_mod('servicios_icon_4', get_template_directory_uri().'/img/credito-pyme-icon.png')?>" alt="<?php echo get_theme_mod('servicios_heading_4', 'Crédito PyME'); ?>">
 				</div>
 			</div>
 			<div class="services-row">
 				<div class="service-item services-color-3">
-					<h2>Adelanto</h2>
-					<img src="<?php bloginfo('template_url'); ?>/img/adelanto-icon.png" alt="Adelanto">
+					<h2><?php echo get_theme_mod('servicios_heading_5', 'Adelanto'); ?></h2>
+					<img src="<?php echo get_theme_mod('servicios_icon_5', get_template_directory_uri().'/img/adelanto-icon.png')?>" alt="<?php echo get_theme_mod('servicios_heading_5', 'Adelanto'); ?>">
 				</div>
 				<div class="service-item services-color-4">
-					<h2>Crédito Nómina</h2>
-					<img src="<?php bloginfo('template_url'); ?>/img/credito-nomina-icon.png" alt="Crédito Nómina">
+					<h2><?php echo get_theme_mod('servicios_heading_6', 'Crédito Nómina'); ?></h2>
+					<img src="<?php echo get_theme_mod('servicios_icon_6', get_template_directory_uri().'/img/credito-nomina-icon.png')?>" alt="<?php echo get_theme_mod('servicios_heading_6', 'Crédito Nómina'); ?>">
 				</div>
 				<div class="service-item services-color-2">
-					<h2>Créditos Personales</h2>
-					<img src="<?php bloginfo('template_url'); ?>/img/credito-personal-icon.png" alt="Créditos Personales">
+					<h2><?php echo get_theme_mod('servicios_heading_7', 'Créditos Personales'); ?></h2>
+					<img src="<?php echo get_theme_mod('servicios_icon_7', get_template_directory_uri().'/img/credito-personal-icon.png')?>" alt="<?php echo get_theme_mod('servicios_heading_7', 'Créditos Personales'); ?>">
 				</div>
 			</div>
 		</div>
@@ -63,45 +63,11 @@
 			<div id="triangle-right"></div>
 		</div>
 		<div class="section-alianzas">
-			<div class="alianzas-item">
-				<img src="<?php bloginfo('template_url'); ?>/img/alianzas/citibanamex.png" alt="Citibanamex">
-			</div>
-			<div class="alianzas-item">
-				<img src="<?php bloginfo('template_url'); ?>/img/alianzas/santander.png" alt="Santander">
-			</div>
-			<div class="alianzas-item">
-				<img src="<?php bloginfo('template_url'); ?>/img/alianzas/banorte.png" alt="Banorte">
-			</div>
-			<div class="alianzas-item">
-				<img src="<?php bloginfo('template_url'); ?>/img/alianzas/hsbc.jpg" alt="Hsbc">
-			</div>
-			<div class="alianzas-item">
-				<img src="<?php bloginfo('template_url'); ?>/img/alianzas/scotiabank.png" alt="Scotiabank">
-			</div>
-			<div class="alianzas-item">
-				<img src="<?php bloginfo('template_url'); ?>/img/alianzas/bancomer.png" alt="Bancomer">
-			</div>
-			<div class="alianzas-item">
-				<img src="<?php bloginfo('template_url'); ?>/img/alianzas/afirme.png" alt="Afirme">
-			</div>
-			<div class="alianzas-item">
-				<img src="<?php bloginfo('template_url'); ?>/img/alianzas/banca-mifel.png" alt="Banca Mifel">
-			</div>
-			<div class="alianzas-item">
-				<img src="<?php bloginfo('template_url'); ?>/img/alianzas/cualli-financiera.png" alt="Cualli Financiera">
-			</div>
-			<div class="alianzas-item">
-				<img src="<?php bloginfo('template_url'); ?>/img/alianzas/bx+.png" alt="BX+">
-			</div>
-			<div class="alianzas-item">
-				<img src="<?php bloginfo('template_url'); ?>/img/alianzas/ion.jpg" alt="ION">
-			</div>
-			<div class="alianzas-item">
-				<img src="<?php bloginfo('template_url'); ?>/img/alianzas/infonavit.png" alt="Infonavit">
-			</div>
-			<div class="alianzas-item">
-				<img src="<?php bloginfo('template_url'); ?>/img/alianzas/fovissste.jpg" alt="Fovissste">
-			</div>
+			<?php 
+				$id = 55; // add the ID of the page where the zero is
+				$p = get_page($id);
+				echo apply_filters('the_content', $p->post_content);
+			 ?>
 		</div>
 	</section>
 </div>
