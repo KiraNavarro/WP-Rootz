@@ -25,7 +25,12 @@
 					<?php dynamic_sidebar( 'box3' ); ?>
 				<?php endif; ?>
 			</div>
+			
 		</div>
+		<!-- Contact Form -->
+		<?php
+			echo do_shortcode( '[contact-form-7 id="144" title="Contact form 1"]'); 
+		?>
 	</div>
 </section>
 <?php get_footer(); ?>

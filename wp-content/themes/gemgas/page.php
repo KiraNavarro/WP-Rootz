@@ -1,7 +1,6 @@
 <?php get_header(); ?>	
-	<main role="main" class="container">
-		<div class="row">
-			<div class="col-sm-8 blog-main">
+	<main role="main" class="container main">
+			<div class="blog-main">
 				<?php if( have_posts()) : ?>
 					<?php while( have_posts()) : the_post(); ?>
 						<div class="blog-post">
@@ -15,13 +14,11 @@
 				<?php else : ?>
 					<p><?php __('No Page found'); ?></p>
 				<?php endif; ?>
-				
+				<!-- Contact Form -->
+				<?php
+					echo do_shortcode( '[contact-form-7 id="144" title="Contact form 1"]'); 
+				?>
 			</div><!-- /.blog-main -->
-			
-			<!-- sidebar -->
-			<?php get_sidebar(); ?>
-			
-		</div><!-- /.row -->
 		
 	</main><!-- /.container -->
 	

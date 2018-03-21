@@ -62,6 +62,4 @@
 				</nav>
 			</div>
 		</div>
-		
-		
 	</header>
