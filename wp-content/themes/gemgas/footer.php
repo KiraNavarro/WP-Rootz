@@ -1,6 +1,10 @@
 	<footer class="blog-footer">
-		<p>&copy; <?php echo Date('Y'); ?> - <?php bloginfo('name'); ?></p>
-		<p>Diseño y Desarrollo Web por <a href="http://mtpublicidad.com.mx/" target="blank">MT Publicidad</a></p>
+		<a href="http://mtpublicidad.com.mx/" target="blank"><?php echo Date('Y'); ?> MT Publicidad</a>
+		<a href="http://mtpublicidad.com.mx/" target="blank">
+			<img src="<?php bloginfo('template_url'); ?>/img/facebook-footer.svg" alt="Facebook">
+		</a>
+		<a href="http://mtpublicidad.com.mx/" target="blank" class="contact-footer">Contáctenos</a>
+		<a href="http://mtpublicidad.com.mx/" target="blank">Términos y Privacidad</a>
 	</footer>
 	<?php wp_footer(); ?>
 	<!-- Bootstrap core JavaScript

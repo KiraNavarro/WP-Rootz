@@ -33,12 +33,12 @@
 				<p>Contáctanos 5491.2330 ó info@gemgas.mx</p>
 			</div>
 			<div class="header-social">
-				<p>Síguenos en Face @gemgasmx</p>
+				<p>Síguenos en <img src="<?php bloginfo('template_url'); ?>/img/facebook-header.svg" alt="Facebook"> @gemgasmx</p>
 			</div>
 		</div>
 		<div class="container masthead">
 			<div class="logo">
-				<img src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="Facebook">
+				<img src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="Gemgas">
 			</div>
 			<div class="blog-navbar">
 				<nav class="navbar navbar-expand-lg navbar-light bg-light">
