@@ -28,16 +28,20 @@
 <body>
 	
 	<header>
-		<div class="blog-masthead">
-			<div class="container">
-				<h1 class="blog-title"><?php bloginfo('name'); ?></h1>
-				<p class="lead blog-description"><?php bloginfo('description'); ?></p>
+		<div class="container contact-masthead">
+			<div class="header-contacto">
+				<p>Contáctanos 5491.2330 ó info@gemgas.mx</p>
+			</div>
+			<div class="header-social">
+				<p>Síguenos en Face @gemgasmx</p>
 			</div>
 		</div>
-		<div class="blog-navbar">
-			<div class="container">
+		<div class="container masthead">
+			<div class="logo">
+				<img src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="Facebook">
+			</div>
+			<div class="blog-navbar">
 				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					<a class="navbar-brand" href="#">Navbar</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -58,4 +62,6 @@
 				</nav>
 			</div>
 		</div>
+		
+		
 	</header>
