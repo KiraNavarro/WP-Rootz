@@ -61,5 +61,9 @@
 					</div>
 				</nav>
 			</div>
+			
+		</div>
+		<div class="slogan">
+			<p><b>Energía</b> <span>Limpia</span><br>para tu vehículo</p>
 		</div>
 	</header>
