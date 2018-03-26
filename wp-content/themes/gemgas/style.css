@@ -84,6 +84,7 @@ header {
 	height: 600px;
 	background: url('img/bg.jpg') no-repeat;
 	background-size: cover;
+	
 }
 
 /*
@@ -156,7 +157,7 @@ header {
 	position: relative;
 	width: 30%;
 	margin-top: 70px;
-   padding: 20px 0px 23px 0px;
+   padding: 20px 0px 20px 0px;
    background: #002855;
    z-index: 3;
    display: flex;
@@ -198,6 +199,54 @@ header {
 
 .slogan span {
 	color: #3fae29;
+}
+
+/* Contact Form */
+
+form {
+	width: 80%;
+	margin: auto;
+	padding: 50px;
+}
+
+.left-inputs {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.form-control {
+	border: solid 2px #404041;
+	border-radius: 0;
+	margin: 5px 0;
+}
+
+.submit {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.address {
+	text-align: left;
+}
+
+.address b {
+	color: #555;
+	font-family: primary-font-bold;
+}
+
+.submit-btn  {
+	background-color: #002855;
+	border: none;
+	border-radius: 0;
+	color: #fff;
+	padding: 10px 50px;
+}
+
+.submit-btn:hover {
+	background-color: #043b72;
 }
 
 /* Nav links */
@@ -429,18 +478,49 @@ main {
 
 .boxes {
 	text-align: center;
-	background-color: #fff;
 	margin-bottom: 30px;
+	transform: translateY(-75px);
+}
+
+.box-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 .box .fa {
 	font-size: 45px !important;
 	margin-bottom: 10px;
+	
 }
 
 .box {
-	padding: 15px;
-	border: #ccc 1px solid;
+	padding: 25px;
+	background-color: darkcyan;
+	width: 30%;
+	height: 150px;
+}
+
+.textwidget {
+	text-align: left;
+}
+
+.textwidget h3 {
+	font-family: secondary-font;
+	color: #fff;
+}
+
+.textwidget  a {
+	color: #fff;
+	font-size: 14px;
+	font-family: primary-font;
+	text-align: left;
+	
+}
+
+.textwidget a > i {
+	margin-right: 5px;
+	font-size: 16px;
 }
 
 /* Comments */
