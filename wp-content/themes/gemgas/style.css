@@ -499,18 +499,15 @@ main {
 	background-color: darkcyan;
 	width: 30%;
 	height: 150px;
-}
-
-.textwidget {
 	text-align: left;
 }
 
-.textwidget h3 {
+.box h3 {
 	font-family: secondary-font;
 	color: #fff;
 }
 
-.textwidget  a {
+.box  a {
 	color: #fff;
 	font-size: 14px;
 	font-family: primary-font;
@@ -518,7 +515,7 @@ main {
 	
 }
 
-.textwidget a > i {
+.box a > i {
 	margin-right: 5px;
 	font-size: 16px;
 }

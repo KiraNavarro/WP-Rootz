@@ -2,17 +2,18 @@
 <section class="boxes">
 	<div class="container">
 		<div class="row box-container">
-				<?php if( is_active_sidebar( 'box1') ) : ?>
-					<?php dynamic_sidebar( 'box1' ); ?>
-				<?php endif; ?>
-				<?php if( is_active_sidebar( 'box2') ) : ?>
-					<?php dynamic_sidebar( 'box2' ); ?>
-				<?php endif; ?>
-				<?php if( is_active_sidebar( 'box3') ) : ?>
-					<?php dynamic_sidebar( 'box3' ); ?>
-				<?php endif; ?>
+			<div class="box">
+				<h3>Energía Limpia para tu Vehículo</h3>
+				<a href="#"><i class="fas fa-chevron-circle-right"></i>Más información</a>
 			</div>
-			
+			<div class="box">
+				<h3>Energía Limpia para tu Vehículo</h3>
+				<a href="#"><i class="fas fa-chevron-circle-right"></i>Más información</a>
+			</div>
+			<div class="box">
+				<h3>Energía Limpia para tu Vehículo</h3>
+				<a href="#"><i class="fas fa-chevron-circle-right"></i>Más información</a>
+			</div>
 		</div>
 	</div>
 </section>
