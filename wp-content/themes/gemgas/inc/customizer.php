@@ -18,12 +18,12 @@
 			)
 		));
 		
-		//** Showcase **//
+		//** HEADER **//
 		
 		//Set section
-		$wp_customize->add_section('showcase', array(
-			'title' => __('Showcase', 'wp-rootz'),
-			'description' => sprintf(__('Options for showcase', 'wp-rootz')),
+		$wp_customize->add_section('header', array(
+			'title' => __('Header', 'wp-rootz'),
+			'description' => sprintf(__('Opciones para Header', 'wp-rootz')),
 			'priority' => 130
 		));
 		
@@ -75,19 +75,51 @@
 			'priority' => 4
 		));
 		
-		//Showcase Image
-		$wp_customize->add_setting('showcase_image', array(
-			'default' => get_template_directory_uri().'/img/showcase.jpg', 'wp-rootz',
+		//Header Background 1
+		$wp_customize->add_setting('header_bg_1', array(
+			'default' => get_template_directory_uri().'/img/header_bg_1.jpg', 'wp-rootz',
 			'type' => 'theme_mod'
 		));
 		
 		$wp_customize->add_control(new WP_Customize_Image_Control(
-			$wp_customize, 'logo_image',
+			$wp_customize, 'header_bg_1',
 			array(
-				'label' => __('Showcase Image', 'wp-rootz'),
-				'section' => 'showcase',
-				'settings' => 'showcase_image',
+				'label' => __('Background 1', 'wp-rootz'),
+				'section' => 'header',
+				'settings' => 'header_bg_1',
 				'priority' => 5
+			)
+		));
+		
+		//Header Background 2
+		$wp_customize->add_setting('header_bg_2', array(
+			'default' => get_template_directory_uri().'/img/header_bg_1.jpg', 'wp-rootz',
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control(new WP_Customize_Image_Control(
+			$wp_customize, 'header_bg_2',
+			array(
+				'label' => __('Background 2', 'wp-rootz'),
+				'section' => 'header',
+				'settings' => 'header_bg_2',
+				'priority' => 6
+			)
+		));
+		
+		//Header Background 3
+		$wp_customize->add_setting('header_bg_3', array(
+			'default' => get_template_directory_uri().'/img/header_bg_1.jpg', 'wp-rootz',
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control(new WP_Customize_Image_Control(
+			$wp_customize, 'header_bg_3',
+			array(
+				'label' => __('Background 2', 'wp-rootz'),
+				'section' => 'header',
+				'settings' => 'header_bg_3',
+				'priority' => 6
 			)
 		));
 		

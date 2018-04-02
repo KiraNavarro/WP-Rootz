@@ -19,8 +19,18 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 	<?php wp_head(); ?>
 	<style media="screen">
-		.showcase {
-			background: url( <?php echo get_theme_mod('showcase_image', get_template_directory_uri().'/img/showcase.jpg') ?>) no-repeat center center;
+		header {
+			background: url( 
+				<?php if (is_page('Contacto')) : ?>
+					<?php echo get_theme_mod('header_bg_2', get_template_directory_uri().'/img/header_bg_1.jpg')?>
+				<?php elseif (is_home()) : ?>
+					<?php  echo get_theme_mod('header_bg_3', get_template_directory_uri().'/img/header_bg_1.jpg')?>
+					
+				<?php else : ?>
+					<?php echo get_theme_mod('header_bg_1', get_template_directory_uri().'/img/header_bg_1.jpg')?>
+				<?php endif; ?>) no-repeat;
+				
+			background-size: cover;
 		}
 	</style>
 </head>

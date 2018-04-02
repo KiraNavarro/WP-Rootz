@@ -54,7 +54,7 @@ h5,
 .h5,
 h6,
 .h6 {
-	font-family: primary-font;
+	font-family: secondary-font-bold;
 	font-weight: 400;
 	color: #333;
 }
@@ -78,13 +78,14 @@ b {
 	color: #3fae29;
 }
 
+strong {
+	color: #3fae29;
+}
+
 /**** HEADER ****/
 
 header {
 	height: 600px;
-	background: url('img/bg.jpg') no-repeat;
-	background-size: cover;
-	
 }
 
 /*
@@ -412,10 +413,14 @@ form {
 .blog-post {
 	margin-bottom: 4rem;
 }
+
 .blog-post-title {
-	margin-bottom: .25rem;
+	margin: 2rem 0 4rem 0;
 	font-size: 2.5rem;
+	text-align: center;
+	color: #3fae29;
 }
+
 .blog-post-meta {
 	margin-bottom: 1.25rem;
 	color: #999;
