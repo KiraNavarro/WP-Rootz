@@ -1,10 +1,10 @@
 	<footer class="blog-footer">
-		<a href="http://mtpublicidad.com.mx/" target="blank"><?php echo Date('Y'); ?> MT Publicidad</a>
-		<a href="http://mtpublicidad.com.mx/" target="blank">
+		<a href="http://mtpublicidad.com.mx/" target="_blank"><?php echo Date('Y'); ?> MT Publicidad</a>
+		<a href="https://www.facebook.com/gemgasmx" target="_blank">
 			<img src="<?php bloginfo('template_url'); ?>/img/facebook-footer.svg" alt="Facebook">
 		</a>
-		<a href="http://mtpublicidad.com.mx/" target="blank" class="contact-footer">Contáctenos</a>
-		<a href="http://mtpublicidad.com.mx/" target="blank">Términos y Privacidad</a>
+		<a href="contacto" class="contact-footer">Contáctenos</a>
+		<a href="#" target="_blank">Términos y Privacidad</a>
 	</footer>
 	<?php wp_footer(); ?>
 	<!-- Bootstrap core JavaScript

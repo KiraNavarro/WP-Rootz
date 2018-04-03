@@ -107,7 +107,7 @@ header {
 	font-size: 14px;
 }
 
-.contact-masthead h1, .contact-masthead p {
+.contact-masthead h1, .contact-masthead p, .contact-masthead a {
 	color: #fff;
 }
 
@@ -116,6 +116,10 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+
+.header-contacto a, .header-social {
+	color: #fff;
 }
 
 .logo {

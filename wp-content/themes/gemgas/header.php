@@ -4,7 +4,7 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="<?php bloginfo('descritpion'); ?>" >
-	<link rel="icon" href="../../../../favicon.ico">
+	<link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/x-icon" >
 	<title>
 		<?php bloginfo('name'); ?> | 
 		<?php is_front_page() ? bloginfo('description') : wp_title(); ?>
@@ -40,10 +40,10 @@
 	<header>
 		<div class="container contact-masthead">
 			<div class="header-contacto">
-				<p>Contáctanos 5491.2330 ó info@gemgas.mx</p>
+				<p>Contáctanos 5491.2330 ó <a href="mailto:info@gemgas.mx">info@gemgas.mx</a></p>
 			</div>
 			<div class="header-social">
-				<p>Síguenos en <img src="<?php bloginfo('template_url'); ?>/img/facebook-header.svg" alt="Facebook"> @gemgasmx</p>
+				<p>Síguenos en <a href="https://www.facebook.com/gemgasmx" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/facebook-header.svg" alt="Facebook">@gemgasmx</a></p>
 			</div>
 		</div>
 		<div class="container masthead">
