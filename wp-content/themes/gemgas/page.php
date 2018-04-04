@@ -17,7 +17,7 @@
 		</div><!-- /.blog-main -->
 		<!-- Contact Form -->
 		<?php
-			echo do_shortcode( '[contact-form-7 id="144" title="Contact form 1"]'); 
+			//echo do_shortcode( '[contact-form-7 id="144" title="Contact form 1"]'); 
 		?>
 	</main><!-- /.container -->
 	
