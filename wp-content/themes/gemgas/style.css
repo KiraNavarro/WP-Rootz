@@ -579,3 +579,71 @@ main {
 	border: #ccc solid 1px;
 	margin-bottom: 15px;
 }
+
+/* Movil */
+
+@media (max-width: 450px) {
+	.contact-masthead {
+		flex-direction: column;
+		padding: 15px 30px;
+		align-items: center;
+	}
+	
+	.logo {
+		width: 80%;
+		margin-right: 60px;
+	}
+	
+	.blog-navbar {
+		width: 65%;
+	}
+	
+	.menu-item {
+		text-align: left;
+	}
+	
+	.navbar-collapse {
+		margin-top: 1rem;
+	}
+	
+	.slogan {
+		width: 65%;
+	}
+	
+	.box-container {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.boxes {
+		    transform: translateY(-15px);
+	}
+	
+	.box {
+		width: 80%;
+		margin-bottom: 1rem;
+	}
+	
+	.submit {
+		text-align: center;
+	}
+	
+	.address {
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+	
+	.blog-main {
+		width: 90%;
+	}
+	
+	.blog-footer {
+		flex-direction: column;
+		padding: 1.5rem 2.5rem;
+	}
+	
+	.blog-footer a {
+		margin-bottom: 1rem;
+	}
+	
+}
