@@ -16,7 +16,7 @@
 	<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
 	
 	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 	<?php wp_head(); ?>
 	<style media="screen">
 		.showcase {
