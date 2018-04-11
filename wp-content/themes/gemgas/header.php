@@ -48,7 +48,7 @@
 		</div>
 		<div class="container masthead">
 			<div class="logo">
-				<img src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="Gemgas">
+				<a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="Gemgas"></a>
 			</div>
 			<div class="blog-navbar">
 				<nav class="navbar navbar-expand-lg navbar-light bg-light">

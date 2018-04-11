@@ -4,7 +4,6 @@
 			<img src="<?php bloginfo('template_url'); ?>/img/facebook-footer.svg" alt="Facebook">
 		</a>
 		<a href="contacto" class="contact-footer">Contáctenos</a>
-		<a href="#" target="_blank">Términos y Privacidad</a>
 	</footer>
 	<?php wp_footer(); ?>
 	<!-- Bootstrap core JavaScript
