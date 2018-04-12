@@ -21,13 +21,18 @@
 	<style media="screen">
 		header {
 			background: url( 
-				<?php if (is_page('Contacto')) : ?>
-					<?php echo get_theme_mod('header_bg_2', get_template_directory_uri().'/img/header_bg_1.jpg')?>
-				<?php elseif (is_home()) : ?>
-					<?php  echo get_theme_mod('header_bg_3', get_template_directory_uri().'/img/header_bg_1.jpg')?>
-					
-				<?php else : ?>
-					<?php echo get_theme_mod('header_bg_1', get_template_directory_uri().'/img/header_bg_1.jpg')?>
+				<?php if (is_page('contacto')) : ?>
+					<?php echo get_template_directory_uri().'/img/header_contacto.jpg' ?>
+				<?php elseif (is_front_page()) : ?>
+					<?php echo get_template_directory_uri().'/img/header_empresa.jpg' ?>
+				<?php elseif (is_page('beneficios'))  : ?>
+					<?php echo get_template_directory_uri().'/img/header_beneficios.jpg' ?>
+				<?php elseif (is_page('gas-natural'))  : ?>
+					<?php echo get_template_directory_uri().'/img/header_gas_natural.jpg' ?>
+				<?php elseif (is_page('proyectos'))  : ?>
+					<?php echo get_template_directory_uri().'/img/header_proyectos.jpg' ?>
+				<?php elseif (is_page('soluciones'))  : ?>
+					<?php echo get_template_directory_uri().'/img/header_soluciones.jpg' ?>
 				<?php endif; ?>) no-repeat;
 				
 			background-size: cover;

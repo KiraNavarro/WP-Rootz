@@ -302,6 +302,10 @@ form {
   padding: 0 .5rem;
 }
 
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
 .dropdown-menu > .active a {
 	font-family: primary-font;
 	display: block;
