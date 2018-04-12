@@ -320,11 +320,11 @@ form {
 .menu-item a:hover {
 	color: #3fae29;
 	display: block;
-	-webkit-animation: menu-animation .7s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: menu-animation .7s; /* Firefox < 16 */
-	-ms-animation: menu-animation .7s; /* Internet Explorer */
-	-o-animation: menu-animation .7s; /* Opera < 12.1 */
-	animation: menu-animation .7s;	
+	-webkit-animation: menu-animation .5s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: menu-animation .5s; /* Firefox < 16 */
+	-ms-animation: menu-animation .5s; /* Internet Explorer */
+	-o-animation: menu-animation .5s; /* Opera < 12.1 */
+	animation: menu-animation .5s;	
 }
 
 @keyframes menu-animation {
