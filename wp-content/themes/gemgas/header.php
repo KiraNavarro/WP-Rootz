@@ -33,6 +33,8 @@
 					<?php echo get_template_directory_uri().'/img/header_proyectos.jpg' ?>
 				<?php elseif (is_page('soluciones'))  : ?>
 					<?php echo get_template_directory_uri().'/img/header_soluciones.jpg' ?>
+				<?php else : ?>
+					<?php echo get_template_directory_uri().'/img/header_empresa.jpg' ?>
 				<?php endif; ?>) no-repeat;
 				
 			background-size: cover;
