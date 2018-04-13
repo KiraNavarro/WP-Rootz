@@ -1,4 +1,8 @@
 <?php 
+//Load STYLES
+wp_enqueue_style( 'main', get_template_directory_uri() . '/css/main.css',false,'1.1','all');
+
+
 // Register Custom Navigation Walker
 require_once 'wp-bootstrap-navwalker.php';
 
