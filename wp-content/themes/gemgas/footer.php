@@ -1,5 +1,5 @@
 	<footer class="blog-footer">
-		<a href="http://mtpublicidad.com.mx/" target="_blank"><?php echo Date('Y'); ?> MT Publicidad</a>
+		<a href="https://www.mazeta.mx/" target="_blank"><?php echo Date('Y'); ?> Mazeta Marketing</a>
 		<a href="https://www.facebook.com/gemgasmx" target="_blank">
 			<img src="<?php bloginfo('template_url'); ?>/img/facebook-footer.svg" alt="Facebook">
 		</a>
