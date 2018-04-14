@@ -47,7 +47,7 @@
 	<header>
 		<div class="container contact-masthead">
 			<div class="header-contacto">
-				<p>Contáctanos 5491.2330 ó <a href="mailto:info@gemgas.mx">info@gemgas.mx</a></p>
+				<p>Contáctanos 5481.2330 ó <a href="mailto:info@gemgas.mx">info@gemgas.mx</a></p>
 			</div>
 			<div class="header-social">
 				<p>Síguenos en <a href="https://www.facebook.com/gemgasmx" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/facebook-header.svg" alt="Facebook">@gemgasmx</a></p>
