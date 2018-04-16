@@ -6,7 +6,8 @@ var gulp = require('gulp');
 gulp.task('browser-sync', () => {
 	var files = [
 		'./css/main.css',
-		'./*.php'
+		'./*.php',
+		'./img/**'
 	]
 	// Initialize Browsersync with php server
 	browserSync.init(files,{
