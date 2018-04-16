@@ -26,9 +26,17 @@
 	
 	<header>
 		<div class="blog-masthead">
-			<div class="container">
-				<h1 class="blog-title"><?php bloginfo('name'); ?></h1>
-				<p class="lead blog-description"><?php bloginfo('description'); ?></p>
+			<div class="container blog-header">
+				<div class="blog-logo">
+					<a href="<?php echo get_home_url(); ?>">
+						<img src="<?php echo get_template_directory_uri().'/img/site-logo.png' ?>" alt="Site logo">
+					</a>
+				</div>
+				<div class="blog-info">
+					<h1 class="blog-title"><?php bloginfo('name'); ?></h1>
+					<p class="lead blog-description"><?php bloginfo('description'); ?></p>
+				</div>
+				
 			</div>
 		</div>
 		<div class="blog-navbar">
