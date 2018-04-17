@@ -5,7 +5,7 @@ var gulp = require('gulp');
 	
 gulp.task('browser-sync', () => {
 	var files = [
-		'./css/main.css',
+		'./style.css',
 		'./*.php',
 		'./img/**'
 	]
@@ -18,7 +18,7 @@ gulp.task('browser-sync', () => {
 gulp.task('sass', () => {
 	gulp.src('sass/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
-		.pipe(gulp.dest('./css/'))
+		.pipe(gulp.dest('./'))
 		.pipe(browserSync.stream());
 });
 
