@@ -1,7 +1,6 @@
 <?php get_header(); ?>	
 	<main role="main" class="container">
-		<div class="row">
-			<div class="col-sm-8 blog-main">
+			<div class="blog-main">
 				<?php if( have_posts()) : ?>
 					<?php while( have_posts()) : the_post(); ?>
 						<?php get_template_part( 'content' ); ?>
@@ -19,9 +18,6 @@
 			
 			<!-- sidebar -->
 			<?php get_sidebar(); ?>
-			
-		</div><!-- /.row -->
-		
 	</main><!-- /.container -->
 	
 	<?php get_footer(); ?>

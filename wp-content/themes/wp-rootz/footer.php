@@ -1,6 +1,8 @@
 	<footer class="blog-footer">
-		<p>&copy; <?php echo Date('Y'); ?> - <?php bloginfo('name'); ?></p>
-		<p>Diseño y Desarrollo Web por <a href="http://mtpublicidad.com.mx/" target="blank">MT Publicidad</a></p>
+		<a href="http://mtpublicidad.com.mx/" target="blank">&copy; <?php echo Date('Y'); ?> - MT Publicidad</a>
+		<a href="https://www.facebook.com/ubiqmx" target="_blank"><img src="<?php echo get_template_directory_uri().'/img/facebook-light.png' ?>" alt="Site logo"></a>
+		<a href="#">Contáctenos</a>
+		<a href="#">Términos y Privacidad</a>
 	</footer>
 	<?php wp_footer(); ?>
 	<!-- Bootstrap core JavaScript

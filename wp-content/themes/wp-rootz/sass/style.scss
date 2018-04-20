@@ -24,7 +24,7 @@ Version: 1.0
 
 @font-face {
 	font-family: secondary-font;
-	src: url(fonts/AGENCYR.TTF);
+	src: url(fonts/EurostileTBla.ttf);
 }
 
 @media (min-width: 48em) {
@@ -38,11 +38,13 @@ Version: 1.0
 $orange : #ef5a29;
 $light-blue : #009ad9;
 $dark-blue: #003454;
+$light-gray: #666666;
+$dark-gray: #282828;
 
 
 body {
 	font-family: primary-font;
-	color: #CCC;
+	color: $light-gray;
 }
 
 h1,
@@ -103,6 +105,7 @@ header {
 /* Nav links */
 .blog-navbar {
 	margin-bottom: 25px;
+	
 	.container {
 		padding: 0;
 	}
@@ -133,8 +136,20 @@ header {
 
 /* Active state gets a caret at the bottom */
 
+.dropdown-toggle::after {
+	border: solid #4d4d4d;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+	transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
 .dropdown:hover .dropdown-menu {
 	display: block;
+	top: 20px;
+	border: none;
+	border-radius: 0;
 }
 
 /*
@@ -215,11 +230,32 @@ header {
 */
 .blog-post {
 	margin-bottom: 4rem;
+	width: 70%;
+	margin: auto;
+	padding: 30px;
+	h1, h2, h3, h4, h5, h6 {
+		color: $orange;
+		font-family: secondary-font;
+		text-transform: uppercase;
+		margin: 50px 0;
+	}
+	a {
+		color: $orange;
+	}
+	ul, ol {
+		margin-left: 20px;	
+	}
+	b, strong {
+		font-weight: 900;
+		font-family: primary-font-bold;
+	}
 }
 .blog-post-title {
 	margin-bottom: .25rem;
 	font-size: 2.5rem;
+	text-align: center;
 }
+
 .blog-post-meta {
 	margin-bottom: 1.25rem;
 	color: #999;
@@ -241,56 +277,72 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 */
 .blog-footer {
 	padding: 2.5rem 0;
-	color: #999;
 	text-align: center;
-	background-color: #f9f9f9;
-	border-top: .05rem solid #e5e5e5;
-}
-.blog-footer p:last-child {
-	margin-bottom: 0;
+	background-color: $dark-gray;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	a {
+		color: #fff;
+		padding: 0 20px;
+		text-decoration: none;
+		&:hover {
+			font-weight: bold;
+		}
+	}
+	img {
+		width: 30px;
+	}
 }
 
-/*** CUSTOM STYLES ***/
+/* Contact Form */
 
-/* Showcase */
-.showcase {
-	height: 600px;
-	padding: 100px 20px;
-	text-align: center;
-	border-bottom: #ccc 1px solid;
-	margin-bottom: 30px;
+form {
+	margin: auto;
+	padding: 50px;
+}
+
+.left-inputs {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.form-control {
+	border: solid 2px $dark-gray;
+	border-radius: 0;
+	margin: 5px 0;
+}
+
+.submit {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.address {
+	text-align: left;
+	b {
+		color: #555;
+		font-family: primary-font-bold;
+	}
+}
+
+.submit-btn  {
+	background-color: $dark-blue;
+	border: none;
+	border-radius: 0;
 	color: #fff;
-	background-size: cover;
+	padding: 10px 50px;
+	&:hover {
+		background-color: $light-blue;
+	}
 }
 
-.showcase h1 {
-	font-size: 55px;
-	padding-bottom: 20px;
-	color: #fff;
-}
 
-.showcase p {
-	font-size: 20px;
-	margin-bottom: 50px;
-}
 
-/* Boxes */
-
-.boxes {
-	text-align: center;
-	background-color: #fff;
-	margin-bottom: 30px;
-}
-
-.box .fa {
-	font-size: 45px !important;
-	margin-bottom: 10px;
-}
-
-.box {
-	padding: 15px;
-	border: #ccc 1px solid;
-}
 
 /* Comments */
 
