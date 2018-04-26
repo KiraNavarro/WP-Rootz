@@ -4,9 +4,9 @@
 			<?php if( have_posts()) : ?>
 				<?php while( have_posts()) : the_post(); ?>
 					<div class="blog-post">
-						<h2 class="blog-post-title">
+						<h1 class="blog-post-title">
 							<?php the_title(); ?>
-						</h2>
+						</h1>
 						
 						<?php the_content(); ?>
 					</div><!-- /.blog-post -->

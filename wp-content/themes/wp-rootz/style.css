@@ -183,10 +183,13 @@ header {
   margin: auto;
   padding: 30px; }
   .blog-post h1, .blog-post h2, .blog-post h3, .blog-post h4, .blog-post h5, .blog-post h6 {
-    color: #ef5a29;
     font-family: secondary-font;
     text-transform: uppercase;
     margin: 50px 0; }
+  .blog-post h1, .blog-post h3, .blog-post h4, .blog-post h5, .blog-post h6 {
+    color: #ef5a29; }
+  .blog-post h2 {
+    color: #003454; }
   .blog-post a {
     color: #ef5a29; }
   .blog-post ul, .blog-post ol {
@@ -194,6 +197,13 @@ header {
   .blog-post b, .blog-post strong {
     font-weight: 900;
     font-family: primary-font-bold; }
+  .blog-post td {
+    padding: 0 15px 10px;
+    border-right: 2px #ccc dotted; }
+    .blog-post td:first-child {
+      padding-left: 0; }
+    .blog-post td:last-child {
+      border: none; }
 
 .blog-post-title {
   margin-bottom: .25rem;
