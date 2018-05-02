@@ -18,23 +18,26 @@
 	<style media="screen">
 		header {
 			background: url( 
-				<?php if (is_page('contacto')) : ?>
+				<?php if (is_front_page()) : ?>
 					<?php echo get_template_directory_uri().'/img/head-1.jpg' ?>
-				<?php elseif (is_front_page()) : ?>
-					<?php echo get_template_directory_uri().'/img/head-1.jpg' ?>
-				<?php elseif (is_page('beneficios'))  : ?>
-					<?php echo get_template_directory_uri().'/img/head-1.jpg' ?>
-				<?php elseif (is_page('gas-natural'))  : ?>
-					<?php echo get_template_directory_uri().'/img/head-1.jpg' ?>
-				<?php elseif (is_page('proyectos'))  : ?>
-					<?php echo get_template_directory_uri().'/img/head-1.jpg' ?>
-				<?php elseif (is_page('soluciones'))  : ?>
-					<?php echo get_template_directory_uri().'/img/head-1.jpg' ?>
+				<?php elseif (is_page('soluciones')) : ?>
+					<?php echo get_template_directory_uri().'/img/soluciones-header.jpg' ?>
+				<?php elseif (is_page('administracion-de-flotas'))  : ?>
+					<?php echo get_template_directory_uri().'/img/administracion-de-flotas-header.jpg' ?>
+				<?php elseif (is_page('ubiq-bus'))  : ?>
+					<?php echo get_template_directory_uri().'/img/ubiq-bus-header.jpg' ?>
+				<?php elseif (is_page('ubiq-logistics'))  : ?>
+					<?php echo get_template_directory_uri().'/img/ubiq-logistics-header.jpg' ?>
+				<?php elseif (is_page('gpss'))  : ?>
+					<?php echo get_template_directory_uri().'/img/gpss-header.jpg' ?>
+				<?php elseif (is_page('iot'))  : ?>
+					<?php echo get_template_directory_uri().'/img/iot-header.jpg' ?>
 				<?php else : ?>
 					<?php echo get_template_directory_uri().'/img/head-1.jpg' ?>
 				<?php endif; ?>) no-repeat;
 				
-			background-size: cover;
+			background-size: 100% 100%;
+			background-position: center;
 		}
 	</style>
 </head>
@@ -52,7 +55,7 @@
 				<div class="blog-nav-content">
 					<div class="blog-info">
 						<span class="head-contact">Contáctenos: + (52 55) 5925 4309 </span>
-						<span class="head-social">Síguenos en: <a href="https://www.facebook.com/ubiqmx" target="_blank"><img src="<?php echo get_template_directory_uri().'/img/facebook.png' ?>" alt="Site logo"> @ubiqmx</a></span>
+						<span class="head-social">Síguenos en: <a href="https://www.facebook.com/ubiqrastreo/" target="_blank"><img src="<?php echo get_template_directory_uri().'/img/facebook.png' ?>" alt="Site logo"> @ubiqmx</a></span>
 					</div>
 					<div class="blog-navbar">
 						<div class="container">

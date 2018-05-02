@@ -59,7 +59,8 @@ ul, ol {
 * Masthead for nav
 */
 header {
-  height: 800px; }
+  height: 800px;
+  background-color: red; }
 
 .blog-info {
   color: #ef5a29;
@@ -184,10 +185,11 @@ header {
   padding: 30px; }
   .blog-post h1, .blog-post h2, .blog-post h3, .blog-post h4, .blog-post h5, .blog-post h6 {
     font-family: secondary-font;
-    text-transform: uppercase;
-    margin: 50px 0; }
+    text-transform: uppercase; }
   .blog-post h1, .blog-post h3, .blog-post h4, .blog-post h5, .blog-post h6 {
     color: #ef5a29; }
+  .blog-post h1 {
+    margin: 50px 0; }
   .blog-post h2 {
     color: #003454; }
   .blog-post a {
@@ -204,6 +206,8 @@ header {
       padding-left: 0; }
     .blog-post td:last-child {
       border: none; }
+    .blog-post td img {
+      margin-right: 10px; }
 
 .blog-post-title {
   margin-bottom: .25rem;
@@ -251,7 +255,8 @@ img.aligncenter {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-top: 100px; }
   .blog-footer a {
     color: #fff;
     padding: 0 20px;
