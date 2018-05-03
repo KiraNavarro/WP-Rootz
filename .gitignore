@@ -4,7 +4,7 @@
 # http://ironco.de/bare-minimum-git/
 # ver 20150227
 #
-# This file is tailored for a WordPress project 
+# This file is tailored for a WordPress project
 # using the default directory structure
 #
 # This file specifies intentionally untracked files to ignore
@@ -52,6 +52,8 @@
 # ignore OS generated files
 ehthumbs.db
 Thumbs.db
+*.DS_Store
+*.DS_Store?
 
 # ignore Editor files
 *.sublime-project
