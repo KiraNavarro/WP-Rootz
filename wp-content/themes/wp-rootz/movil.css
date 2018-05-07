@@ -1,0 +1,51 @@
+/* Movil */
+@media (max-width: 450px) {
+  .blog-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    border-bottom: solid #ccc 1px;
+    -webkit-box-shadow: 0 3px 5px #ccc;
+    box-shadow: 0 3px 5px #ccc; }
+  .blog-nav-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .blog-navbar {
+    margin: 0;
+    position: absolute;
+    top: 30px; }
+  .navbar-nav {
+    margin-top: 15px; }
+  .menu-item {
+    text-align: left;
+    padding: 3px 0; }
+  .blog-info {
+    display: none; }
+  .blog-logo {
+    margin-left: 100px;
+    z-index: 2; }
+    .blog-logo img {
+      width: 200px; }
+  .blog-post {
+    padding: 0;
+    margin: 0px;
+    width: 100%; }
+    .blog-post h2 {
+      font-size: 24px; }
+  .blog-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .blog-footer a {
+      padding: 10px 0; } }
