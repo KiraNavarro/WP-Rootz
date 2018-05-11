@@ -2,7 +2,7 @@
 		<a href="http://mtpublicidad.com.mx/" target="blank">&copy; <?php echo Date('Y'); ?> - MT Publicidad</a>
 		<a href="https://www.facebook.com/ubiqrastreo/" target="_blank"><img src="<?php echo get_template_directory_uri().'/img/facebook-light.png' ?>" alt="Site logo"></a>
 		<a href="contacto">Contáctenos</a>
-		<a href="#">Términos y Privacidad</a>
+		<a href="terminos-y-privacidad">Términos y Privacidad</a>
 	</footer>
 	<?php wp_footer(); ?>
 	<!-- Bootstrap core JavaScript
