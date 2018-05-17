@@ -5,6 +5,62 @@ Author URI: http://www.kiraproject.net/
 Description: Theme base.
 Version: 1.0
 */
+/* Header */
+/*
+* Masthead for nav
+*/
+.blog-masthead {
+  background-color: pink;
+  -webkit-box-shadow: inset 0 -0.1rem 0.25rem rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 -0.1rem 0.25rem rgba(0, 0, 0, 0.1); }
+
+.blog-masthead h1, .blog-masthead p {
+  color: #fff; }
+
+/*
+* Blog name and description
+*/
+.blog-header {
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+  border-bottom: .05rem solid #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.blog-logo img {
+  width: 150px;
+  margin-right: 30px; }
+
+.blog-title {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 400; }
+
+.blog-description {
+  font-size: 1.1rem; }
+
+.box5 {
+  width: 100%;
+  height: 200px;
+  background-color: #7D3C98;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 82% 88%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 100%, 82% 88%, 0 100%, 0 0);
+  position: relative; }
+
+.box6 {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-color: #F39C12;
+  -webkit-clip-path: polygon(100% 0, 100% 92%, 82% 76%, 0 95%, 0 0);
+  clip-path: polygon(100% 0, 100% 92%, 82% 76%, 0 95%, 0 0);
+  z-index: 2; }
+
 /*
 * Globals
 */
@@ -40,17 +96,6 @@ ul, ol {
 */
 .container {
   max-width: 60rem; }
-
-/*
-* Masthead for nav
-*/
-.blog-masthead {
-  background-color: #428bca;
-  -webkit-box-shadow: inset 0 -0.1rem 0.25rem rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 -0.1rem 0.25rem rgba(0, 0, 0, 0.1); }
-
-.blog-masthead h1, .blog-masthead p {
-  color: #fff; }
 
 /* Nav links */
 .blog-navbar {
@@ -90,33 +135,6 @@ ul, ol {
 
 .dropdown:hover .dropdown-menu {
   display: block; }
-
-/*
-* Blog name and description
-*/
-.blog-header {
-  padding: 1.25rem;
-  margin-bottom: 2rem;
-  border-bottom: .05rem solid #eee;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row; }
-
-.blog-logo img {
-  width: 150px;
-  margin-right: 30px; }
-
-.blog-title {
-  margin-bottom: 0;
-  font-size: 2rem;
-  font-weight: 400; }
-
-.blog-description {
-  font-size: 1.1rem; }
 
 .post-thumb img {
   width: 100%;
