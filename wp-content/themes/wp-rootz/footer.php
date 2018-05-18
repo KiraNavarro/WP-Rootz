@@ -17,7 +17,12 @@
 					<h6>Contacto</h6>
 					<p>T. +[52] 6307.4435</p>
 					<p>Horario: L-V / 9hrs - 18hrs</p>
-					<a href="contacto" class="btn-custom">Contactar</a>
+					<?php if (is_page('contacto')) : ?>
+						<a href="mailto:hey@mtpublicidad.com.mx" class="btn-dark">hey@mtpublicidad.com.mx</a>
+					<?php else : ?>
+						<a href="contacto" class="btn-custom">Contactar</a>
+					<?php endif; ?>
+					
 				</div>
 			</div>
 			

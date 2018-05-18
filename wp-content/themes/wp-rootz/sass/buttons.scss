@@ -2,14 +2,20 @@
 * Custom Buttons
 */
 
-a.btn-custom {
+.btn-base {
 	padding: 10px 30px;
-	border: solid $gray 1px;
 	border-radius: 0px 15px;
 	font-size: .9em;
-	color: $gray;
-	text-decoration: none;
 	transition: all .2s ease-in-out;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+a.btn-custom {
+	@extend .btn-base;
+	border: solid $gray 1px;
+	color: $gray;
 	&:hover {
 		background-color: $light-gray ;
 	}
@@ -23,9 +29,15 @@ a.btn-custom {
 }
 
 .submit-btn {
-	padding: 10px 30px;
-	border-radius: 0px 15px;
+	@extend .btn-base;
 	background-color: $pink;
+	color: #fff;
+	margin: 10px 0;
+}
+
+.btn-dark {
+	@extend .btn-base;
+	background-color: $gray;
 	color: #fff;
 	margin: 10px 0;
 }
