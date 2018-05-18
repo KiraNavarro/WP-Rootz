@@ -60,26 +60,13 @@ ul, ol {
 	padding: 0;
 }
 
-a.btn-custom {
-	padding: 10px 30px;
-	border: solid $gray 1px;
-	border-radius: 0px 15px;
-	font-size: .9em;
-	color: $gray;
-	text-decoration: none;
-	transition: all .2s ease-in-out;
-	&:hover {
-		background-color: $light-gray ;
-	}
-}
-
-
 /*
 * Imports
 */
 @import "header";
 @import "footer";
-
+@import "contact";
+@import "buttons";
 
 
 /*

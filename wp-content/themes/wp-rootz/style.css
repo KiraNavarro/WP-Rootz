@@ -49,18 +49,6 @@ h6,
 ul, ol {
   padding: 0; }
 
-a.btn-custom {
-  padding: 10px 30px;
-  border: solid #404041 1px;
-  border-radius: 0px 15px;
-  font-size: .9em;
-  color: #404041;
-  text-decoration: none;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out; }
-  a.btn-custom:hover {
-    background-color: #F5F5F7; }
-
 /*
 * Imports
 */
@@ -185,6 +173,49 @@ a.btn-custom {
 
 .footer-contact {
   text-align: left; }
+
+.contact {
+  width: 70%;
+  margin: auto; }
+
+.form-control {
+  border: solid #404041 1px;
+  border-radius: 0px 15px; }
+
+/*
+* Custom Buttons
+*/
+a.btn-custom {
+  padding: 10px 30px;
+  border: solid #404041 1px;
+  border-radius: 0px 15px;
+  font-size: .9em;
+  color: #404041;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+  a.btn-custom:hover {
+    background-color: #F5F5F7; }
+
+.submit-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 0; }
+
+.submit-btn {
+  padding: 10px 30px;
+  border-radius: 0px 15px;
+  background-color: #D9166F;
+  color: #fff;
+  margin: 10px 0; }
 
 /*
 * Override Bootstrap's default container.
