@@ -25,8 +25,8 @@
 <body>
 	
 	<header>
-		<div class="blog-masthead box5">
-			<div class="blog-header box6">
+		<div class="blog-masthead decoBoxBack">
+			<div class="blog-header decoBoxFront">
 				<div class="blog-logo">
 					<a href="<?php echo get_home_url(); ?>">
 						<img src="<?php echo get_template_directory_uri().'/img/site-logo.png' ?>" alt="Site logo">

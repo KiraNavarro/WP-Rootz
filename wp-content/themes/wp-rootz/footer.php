@@ -1,6 +1,43 @@
 	<footer class="blog-footer">
-		<p>&copy; <?php echo Date('Y'); ?> - <?php bloginfo('name'); ?></p>
-		<p>Diseño y Desarrollo Web por <a href="http://mtpublicidad.com.mx/" target="blank">MT Publicidad</a></p>
+		<section class="footer-section-1">
+			<img src="<?php echo get_template_directory_uri().'/img/logo-b.png' ?>" alt="MT Publicidad">
+			<div class="footer-info">
+				<div class="footer-nav">
+					<h6>Mapa de Sitio</h6>
+					<ul>
+						<li>Home</li>
+						<li>Agencia</li>
+						<li>Proyectos</li>
+						<li>Talento</li>
+						<li>Contacto</li>
+						<li>Más de MT</li>
+					</ul>
+				</div>
+				<div class="footer-contact">
+					<h6>Contacto</h6>
+					<p>T. +[52] 6307.4435</p>
+					<p>Horario: L-V / 9hrs - 18hrs</p>
+					<a href="contacto" class="btn-custom">Contactar</a>
+				</div>
+			</div>
+			
+		</section>
+		<section class="footer-section-2">
+			<a href="home">&copy; <?php echo Date('Y'); ?> - MT Publicidad</a>
+			<div class="redes-footer">
+				<a href="#" target="blank">
+					<img src="<?php echo get_template_directory_uri().'/img/facebook-icon-w.png' ?>" alt="Facebook MT Publicidad">
+				</a>
+				<a href="#" target="blank">
+					<img src="<?php echo get_template_directory_uri().'/img/behance-icon-w.png' ?>" alt="Behance MT Publicidad">
+				</a>
+				<a href="#" target="blank">
+					<img src="<?php echo get_template_directory_uri().'/img/linkedin-icon-w.png' ?>" alt="LinkedIn MT Publicidad">
+				</a>
+			</div>
+			<a href="contacto">Contacto</a>
+			<a href="terminos-y-privacidad">Terminos & Privacidad</a>
+		</section>
 	</footer>
 	<?php wp_footer(); ?>
 	<!-- Bootstrap core JavaScript

@@ -5,7 +5,25 @@ Author URI: http://www.kiraproject.net/
 Description: Theme base.
 Version: 1.0
 */
-@import "header";
+
+/*
+* Fonts
+*/
+@font-face {
+	font-family: primary-font;
+	src: url(fonts/HelveticaNeueLTCom-Lt.ttf);
+}
+
+@font-face {
+	font-family: primary-font-bold;
+	src: url(fonts/HelveticaNeueLTCom-Hv.ttf);
+}
+
+/*
+* Colors
+*/
+$gray: #404041;
+$light-gray: #F5F5F7;
 
 /*
 * Globals
@@ -17,7 +35,7 @@ Version: 1.0
 }
 
 body {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: primary-font;
 	color: #555;
 }
 
@@ -41,6 +59,28 @@ h6,
 ul, ol {
 	padding: 0;
 }
+
+a.btn-custom {
+	padding: 10px 30px;
+	border: solid $gray 1px;
+	border-radius: 0px 15px;
+	font-size: .9em;
+	color: $gray;
+	text-decoration: none;
+	transition: all .2s ease-in-out;
+	&:hover {
+		background-color: $light-gray ;
+	}
+}
+
+
+/*
+* Imports
+*/
+@import "header";
+@import "footer";
+
+
 
 /*
 * Override Bootstrap's default container.
@@ -158,20 +198,6 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 .alignright { float: right; }
 .alignleft { float: left; }
 .aligncenter { display: block; margin-left: auto; margin-right: auto; }
-
-/*
-* Footer
-*/
-.blog-footer {
-	padding: 2.5rem 0;
-	color: #999;
-	text-align: center;
-	background-color: #f9f9f9;
-	border-top: .05rem solid #e5e5e5;
-}
-.blog-footer p:last-child {
-	margin-bottom: 0;
-}
 
 /*** CUSTOM STYLES ***/
 

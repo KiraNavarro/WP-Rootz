@@ -5,6 +5,65 @@ Author URI: http://www.kiraproject.net/
 Description: Theme base.
 Version: 1.0
 */
+/*
+* Fonts
+*/
+@font-face {
+  font-family: primary-font;
+  src: url(fonts/HelveticaNeueLTCom-Lt.ttf); }
+
+@font-face {
+  font-family: primary-font-bold;
+  src: url(fonts/HelveticaNeueLTCom-Hv.ttf); }
+
+/*
+* Colors
+*/
+/*
+* Globals
+*/
+@media (min-width: 48em) {
+  html {
+    font-size: 18px; } }
+
+body {
+  font-family: primary-font;
+  color: #555; }
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #333; }
+
+ul, ol {
+  padding: 0; }
+
+a.btn-custom {
+  padding: 10px 30px;
+  border: solid #404041 1px;
+  border-radius: 0px 15px;
+  font-size: .9em;
+  color: #404041;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+  a.btn-custom:hover {
+    background-color: #F5F5F7; }
+
+/*
+* Imports
+*/
 /* Header */
 /*
 * Masthead for nav
@@ -44,7 +103,7 @@ Version: 1.0
 .blog-description {
   font-size: 1.1rem; }
 
-.box5 {
+.decoBoxBack {
   width: 100%;
   height: 200px;
   background-color: #7D3C98;
@@ -52,7 +111,7 @@ Version: 1.0
   clip-path: polygon(100% 0, 100% 100%, 82% 88%, 0 100%, 0 0);
   position: relative; }
 
-.box6 {
+.decoBoxFront {
   position: absolute;
   width: 100%;
   height: 200px;
@@ -62,34 +121,70 @@ Version: 1.0
   z-index: 2; }
 
 /*
-* Globals
+* Footer
 */
-@media (min-width: 48em) {
-  html {
-    font-size: 18px; } }
+.blog-footer {
+  text-align: center; }
 
-body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #555; }
+.footer-section-1, .footer-section-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  color: #333; }
+.footer-section-1 {
+  padding: 4.5rem 0; }
 
-ul, ol {
-  padding: 0; }
+.footer-section-2 {
+  padding: 2.5rem 0;
+  color: #fff;
+  height: 100px;
+  background-image: url("./img/footer-bg.jpg");
+  background-size: contain; }
+  .footer-section-2 a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .footer-section-2 a:hover {
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05); }
+  .footer-section-2 img {
+    width: 30px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .footer-section-2 img:hover {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2); }
+
+.footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  .footer-info h6 {
+    font-family: primary-font-bold; }
+
+.footer-nav {
+  border-right: solid #404041 1px;
+  padding-right: 55px;
+  margin-right: 35px;
+  text-align: right; }
+
+.footer-contact {
+  text-align: left; }
 
 /*
 * Override Bootstrap's default container.
@@ -209,19 +304,6 @@ img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto; }
-
-/*
-* Footer
-*/
-.blog-footer {
-  padding: 2.5rem 0;
-  color: #999;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-top: .05rem solid #e5e5e5; }
-
-.blog-footer p:last-child {
-  margin-bottom: 0; }
 
 /*** CUSTOM STYLES ***/
 /* Showcase */
