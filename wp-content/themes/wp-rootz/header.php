@@ -16,8 +16,24 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 	<?php wp_head(); ?>
 	<style media="screen">
-		.showcase {
-			background: url( <?php echo get_theme_mod('showcase_image', get_template_directory_uri().'/img/showcase.jpg') ?>) no-repeat center center;
+		.decoBoxFront {
+			background: url( 
+				<?php if (is_page('contacto')) : ?>
+					<?php echo get_template_directory_uri().'/img/header-1.jpg' ?>
+				<?php elseif (is_front_page()) : ?>
+					<?php echo get_template_directory_uri().'/img/header-1.jpg' ?>
+				<?php elseif (is_page('beneficios'))  : ?>
+					<?php echo get_template_directory_uri().'/img/header-1.jpg' ?>
+				<?php elseif (is_page('gas-natural'))  : ?>
+					<?php echo get_template_directory_uri().'/img/header-1.jpg' ?>
+				<?php elseif (is_page('proyectos'))  : ?>
+					<?php echo get_template_directory_uri().'/img/header-1.jpg' ?>
+				<?php elseif (is_page('soluciones'))  : ?>
+					<?php echo get_template_directory_uri().'/img/header-1.jpg' ?>
+				<?php else : ?>
+					<?php echo get_template_directory_uri().'/img/header-1.jpg' ?>
+				<?php endif; ?>) no-repeat;
+			background-size: cover;
 		}
 	</style>
 </head>
@@ -29,12 +45,8 @@
 			<div class="blog-header decoBoxFront">
 				<div class="blog-logo">
 					<a href="<?php echo get_home_url(); ?>">
-						<img src="<?php echo get_template_directory_uri().'/img/site-logo.png' ?>" alt="Site logo">
+						<img src="<?php echo get_template_directory_uri().'/img/site-logo.png' ?>" alt="MT Publicidad">
 					</a>
-				</div>
-				<div class="blog-info">
-					<h1 class="blog-title"><?php bloginfo('name'); ?></h1>
-					<p class="lead blog-description"><?php bloginfo('description'); ?></p>
 				</div>
 			</div>
 		</div>
