@@ -54,6 +54,10 @@ ehthumbs.db
 Thumbs.db
 *.DS_Store
 *.DS_Store?
+wp-content/themes/*.DS_Store
+wp-content/themes/*.DS_Store?
+wp-content/themes/wp-rootz/*.DS_Store
+wp-content/themes/wp-rootz/*.DS_Store?
 
 # ignore Editor files
 *.sublime-project
