@@ -44,10 +44,11 @@ h6,
 .h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  color: #333; }
+  color: #404041; }
 
 ul, ol {
-  padding: 0; }
+  padding: 0;
+  list-style: inside; }
 
 /*
 * Imports
@@ -224,6 +225,54 @@ a.btn-custom {
   margin: 10px 0; }
 
 /*
+* Blog posts
+*/
+.blog-post {
+  margin-bottom: 4rem; }
+  .blog-post a {
+    color: #D9166F; }
+    .blog-post a:hover {
+      color: #D9166F; }
+  .blog-post td {
+    padding: .7rem; }
+
+.blog-post-title {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-align: center; }
+
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999; }
+
+/*
+* Blog Post images
+*/
+img.alignright {
+  float: right;
+  margin: 0 0 1em 1em; }
+
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0; }
+
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.alignright {
+  float: right; }
+
+.alignleft {
+  float: left; }
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*
 * Override Bootstrap's default container.
 */
 .container {
@@ -300,47 +349,6 @@ a.btn-custom {
 
 .blog-pagination > .btn {
   border-radius: 2rem; }
-
-/*
-* Blog posts
-*/
-.blog-post {
-  margin-bottom: 4rem; }
-
-.blog-post-title {
-  margin-bottom: .25rem;
-  font-size: 2.5rem; }
-
-.blog-post-meta {
-  margin-bottom: 1.25rem;
-  color: #999; }
-
-/*
-* Blog Post images
-*/
-img.alignright {
-  float: right;
-  margin: 0 0 1em 1em; }
-
-img.alignleft {
-  float: left;
-  margin: 0 1em 1em 0; }
-
-img.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-.alignright {
-  float: right; }
-
-.alignleft {
-  float: left; }
-
-.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
 
 /*** CUSTOM STYLES ***/
 /* Showcase */

@@ -18,7 +18,6 @@
 	</div>
 	<?php if( is_single() ) : ?>
 		<?php the_content(); ?>
-		<?php comments_template(); ?>
 	<?php else : ?>
 		<?php the_excerpt(); ?>
 	<?php endif; ?>

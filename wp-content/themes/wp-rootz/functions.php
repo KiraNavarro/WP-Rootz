@@ -74,4 +74,5 @@ function wpr_init_widgets( $id ) {
 
 add_action('widgets_init', 'wpr_init_widgets');
 
+
 ?>
