@@ -1,11 +1,11 @@
 <?php get_header(); ?>	
 	<main role="main" class="container">
 		<div class="row">
-			<div class="col-sm-8 blog-main">
+			<div class="col-sm-8 page-main">
 				<?php if( have_posts()) : ?>
 					<?php while( have_posts()) : the_post(); ?>
-						<div class="blog-post">
-							<h2 class="blog-post-title">
+						<div class="page-post">
+							<h2 class="page-post-title">
 								<?php the_title(); ?>
 							</h2>
 							
