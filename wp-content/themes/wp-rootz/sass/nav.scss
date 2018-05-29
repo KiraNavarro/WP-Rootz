@@ -1,16 +1,27 @@
 /* Nav */
 .blog-navbar {
-	margin-bottom: 25px;
+	height: 70px;
+	width: 100%;
+	background-color: $green;
+	z-index: 1;
+	padding-left: 60px;
 }
 
 .menu-item {
-  text-align: center;
-  padding: 0 1rem;
+	text-align: center;
+	padding: 0 1rem;
+	a {
+		
+		color: #fff;
+	}
+}
+
+.active {
+	background-color: pink;
 }
 
 .nav-link {
 	position: relative;
-	padding: 1rem;
 	font-weight: 500;
 	color: #cdddeb;
 }
