@@ -1,9 +1,9 @@
 <?php get_header(); ?>	
 	<main role="main" class="container">
-			<div class="blog-main">
+			<div class="blog-single">
 				<?php if( have_posts()) : ?>
 					<?php while( have_posts()) : the_post(); ?>
-						<?php get_template_part( 'content' ); ?>
+						<?php get_template_part( 'single-post-content' ); ?>
 					<?php endwhile; ?>
 				<?php else : ?>
 					<p><?php __('No Post found'); ?></p>

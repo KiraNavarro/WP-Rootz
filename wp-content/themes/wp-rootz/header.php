@@ -50,28 +50,26 @@
 				</div>
 			</div>
 		</div>
+		<div class="nav-toggle">
+			<span></span>
+		</div>
 		<div class="blog-navbar">
-			<div class="container">
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					<a class="navbar-brand" href="#">Navbar</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<?php
-							wp_nav_menu( array(
-								'menu'              => 'primary',
-								'theme_location'    => 'primary',
-								'depth'             => 2,
-								'container'         => '',
-								'menu_class'        => 'navbar-nav mr-auto',
-								'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-								'walker'            => new WP_Bootstrap_Navwalker())
-							);
-						?>
-					</div>
+			<div class="nav-container transform">
+				<nav>
+					<?php
+						wp_nav_menu( array(
+							'menu'              => 'primary',
+							'theme_location'    => 'primary',
+							'depth'             => 2,
+							'container'         => '',
+							'menu_class'        => 'nav flex-column',
+							'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+							'walker'            => new WP_Bootstrap_Navwalker())
+						);
+					?>
 				</nav>
 			</div>
+			
 		</div>
+		
 	</header>

@@ -1,12 +1,10 @@
-<div class="blog-post">
-	<div class="post-thumb">
-		<a href="<?php the_permalink(); ?>">
+<div class="single-post">
+	<div class="single-post-thumb">
 			<?php if( has_post_thumbnail() ) : ?>
 				<?php the_post_thumbnail(); ?>
 			<?php endif; ?>
-		</a>
 	</div>
-	<h2 class="blog-post-title">
+	<h2 class="single-blog-post-title">
 		<?php if( is_single() ) : ?>
 			<?php the_title(); ?>
 		<?php else : ?>

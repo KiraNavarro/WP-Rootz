@@ -17,8 +17,25 @@ a.btn-custom {
 	border: solid $gray 1px;
 	color: $gray;
 	&:hover {
-		background-color: $light-gray ;
+		background-color: $btn-light-gray ;
 	}
+}
+
+a.btn-custom-orange {
+	@extend .btn-base;
+	background-color: $orange;
+	color: #fff;
+}
+
+a.btn-custom-pink {
+	@extend .btn-base;
+	background-color: $pink;
+	color: #fff;
+}
+a.btn-custom-gray {
+	@extend .btn-base;
+	background-color: $gray;
+	color: #fff;
 }
 
 .submit-container {
