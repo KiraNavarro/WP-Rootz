@@ -1,8 +1,18 @@
 	<footer class="blog-footer">
-		<p>&copy; <?php echo Date('Y'); ?> - <?php bloginfo('name'); ?></p>
-		<p>Diseño y Desarrollo Web por <a href="http://mtpublicidad.com.mx/" target="blank">MT Publicidad</a></p>
+		<section class="footer-1">
+			<p>Sultepec 41, Hipódromo Condesa, CDMX</p>
+			<p>Tel. (55) 26 14 59 73  / Móvil 044 (55) 76 65 28 10</p>
+		</section>
+		<section class="footer-2">
+			<a href="http://mtpublicidad.com.mx/" target="blank"><?php echo Date('Y'); ?> MT Publicidad</a>
+			<a href="blog">
+				<img src="<?php echo get_template_directory_uri().'/img/blog-icon.png' ?>" alt="Blog Call2action">
+				<span>BLOG Call2action</span>
+			</a>
+			<a href="#">Términos y Privacidad</a>
+		</section>
+		
 	</footer>
-	<?php wp_footer(); ?>
 	<!-- Bootstrap core JavaScript
 	================================================== -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

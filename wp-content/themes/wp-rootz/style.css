@@ -5,6 +5,31 @@ Author URI: http://www.kiraproject.net/
 Description: Theme base.
 Version: 1.0
 */
+/* FONTS */
+@font-face {
+  font-family: primary-font;
+  src: url(fonts/HelveticaNeueLTCom-Roman.ttf); }
+
+@font-face {
+  font-family: primary-font-bold;
+  src: url(fonts/HelveticaNeueLTCom-Bd.ttf); }
+
+@font-face {
+  font-family: secondary-font;
+  src: url(fonts/segoepr.ttf); }
+
+@font-face {
+  font-family: secondary-font-bold;
+  src: url(fonts/segoeprb.ttf); }
+
+@font-face {
+  font-family: third-font;
+  src: url(fonts/Nilland-Black.ttf); }
+
+@font-face {
+  font-family: third-font-bold;
+  src: url(fonts/Nilland-Bold.ttf); }
+
 /*
 * Globals
 */
@@ -13,7 +38,7 @@ Version: 1.0
     font-size: 18px; } }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: primary-font;
   color: #555; }
 
 h1,
@@ -148,15 +173,38 @@ ul, ol {
 /*
 * Footer
 */
-.blog-footer {
-  padding: 2.5rem 0;
-  color: #999;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-top: .05rem solid #e5e5e5; }
+.footer, .footer-1, .footer-2 {
+  color: #fff;
+  padding: 25px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .footer a, .footer-1 a, .footer-2 a {
+    color: #fff; }
+  .footer p, .footer-1 p, .footer-2 p {
+    margin: 0; }
 
-.blog-footer p:last-child {
-  margin-bottom: 0; }
+.footer-1 {
+  background-color: #f58220; }
+
+.footer-2 {
+  background-color: #302e2f; }
+  .footer-2 img {
+    width: 35px;
+    margin-right: 30px; }
+  .footer-2 span {
+    font-size: 1.5em;
+    font-family: third-font; }
 
 /* Nav */
 .blog-navbar {

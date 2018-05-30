@@ -6,6 +6,31 @@ Description: Theme base.
 Version: 1.0
 */
 
+/* FONTS */
+@font-face {
+	font-family: primary-font;
+	src: url(fonts/HelveticaNeueLTCom-Roman.ttf); }
+	
+@font-face {
+	font-family: primary-font-bold;
+	src: url(fonts/HelveticaNeueLTCom-Bd.ttf); }
+		
+@font-face {
+	font-family: secondary-font;
+	src: url(fonts/segoepr.ttf); }
+			
+@font-face {
+	font-family: secondary-font-bold;
+	src: url(fonts/segoeprb.ttf); }
+	
+@font-face {
+	font-family: third-font;
+	src: url(fonts/Nilland-Black.ttf); }
+	
+@font-face {
+	font-family: third-font-bold;
+	src: url(fonts/Nilland-Bold.ttf); }
+
 /*
 * Globals
 */
@@ -16,7 +41,7 @@ Version: 1.0
 }
 
 body {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: primary-font;
 	color: #555;
 }
 
@@ -42,6 +67,7 @@ ul, ol {
 }
 
 /* Colors */
+$dark-gray: #302e2f;
 $light-gray: #808285;
 $light-orange: #f58220;
 $orange: #f26522;
