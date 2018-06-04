@@ -84,14 +84,20 @@ ul, ol {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center; }
+
+.test {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  width: 650px;
+  background-color: #00a9a6; }
 
 .blog-logo {
   height: 70px;
+  z-index: 2;
+  width: 350px;
   background-color: #f58220;
-  z-index: 2; }
+  margin-right: 80px; }
   .blog-logo img {
     width: 150px;
     margin: 15px 10px 15px 200px; }
@@ -117,7 +123,7 @@ ul, ol {
     width: 70px;
     height: 70px;
     left: 330px;
-    top: 93px;
+    top: 125px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
 
@@ -210,15 +216,37 @@ ul, ol {
 .blog-navbar {
   height: 70px;
   width: 100%;
-  background-color: #00a9a6;
   z-index: 1;
-  padding-left: 60px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: third-font-bold;
+  font-size: 1.1em;
+  background-color: #00a9a6; }
 
 .menu-item {
+  height: 100%;
   text-align: center;
-  padding: 0 1rem; }
+  padding: 0 .8rem; }
   .menu-item a {
-    color: #fff; }
+    color: #fff;
+    text-decoration: none; }
+
+.dropdown-menu {
+  background-color: #00a9a6;
+  margin: 0;
+  border-top: 0;
+  border-radius: 0px 0px 0.25rem 0.25rem;
+  border-color: #00A098; }
+  .dropdown-menu:hover {
+    background-color: #00A098; }
 
 .active {
   background-color: pink; }

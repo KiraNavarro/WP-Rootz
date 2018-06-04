@@ -2,17 +2,33 @@
 .blog-navbar {
 	height: 70px;
 	width: 100%;
-	background-color: $green;
 	z-index: 1;
-	padding-left: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: third-font-bold;
+	font-size: 1.1em;
+	background-color: $green;
 }
 
 .menu-item {
+	height: 100%;
 	text-align: center;
-	padding: 0 1rem;
+	padding: 0 .8rem;
 	a {
-		
 		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.dropdown-menu {
+	background-color: $green;
+	margin: 0;
+	border-top: 0;
+	border-radius: 0px 0px 0.25rem 0.25rem;
+	border-color: $dark-green;
+	&:hover {
+		background-color: $dark-green;
 	}
 }
 

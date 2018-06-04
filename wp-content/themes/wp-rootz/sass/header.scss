@@ -18,13 +18,20 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.test {
 	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	width: 650px;
+	background-color: $green;
 }
 
 .blog-logo {
 	height: 70px;
-	background-color: $light-orange;
 	z-index: 2;
+	width: 350px;
+	background-color: $light-orange;
+	margin-right: 80px;
 	img {
 		width: 150px;
 		margin: 15px 10px 15px 200px;
@@ -51,7 +58,7 @@
 		width: 70px;
 		height: 70px; 
 		left: 330px;
-		top: 93px;
+		top: 125px;
 		transform: rotate(45deg);
 	} 
 }

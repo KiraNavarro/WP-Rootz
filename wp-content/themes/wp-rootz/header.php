@@ -72,10 +72,12 @@
 				</div>
 			</div>
 			<div class="blog-header">
-				<div class="blog-logo">
-					<a href="<?php echo get_home_url(); ?>">
-						<img src="<?php echo get_template_directory_uri().'/img/site-logo.png' ?>" alt="Site logo">
-					</a>
+				<div class="test">
+					<div class="blog-logo">
+						<a href="<?php echo get_home_url(); ?>">
+							<img src="<?php echo get_template_directory_uri().'/img/site-logo.png' ?>" alt="Site logo">
+						</a>
+					</div>
 				</div>
 				<div class="blog-navbar">
 					<nav class="navbar navbar-expand-lg navbar-light">
