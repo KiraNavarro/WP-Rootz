@@ -422,4 +422,52 @@ form {
 	border: #ccc solid 1px;
 	margin-bottom: 15px;
 }
+
+/* Page Template */
+
+.como-funciona {
+	width: 85%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.cf-title {
+	display: flex;
+	flex-direction: row;
+}
+
+.cf-icon {
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
+}
+
+.location-icon {
+	width: 35px;
+	height: 40px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.cf-text-block {
+	border-left: 1px solid #ccc;
+	padding: 10px 15px;
+	p {
+		font-size: .9em;
+		margin: 0;
+	}
+}
+
+.cf-text-block-on {
+	border-left: 2px solid $orange;
+}
+
+.cf-images {
+	img {
+		width: 600px;
+	}
+}
+
 @import "movil";

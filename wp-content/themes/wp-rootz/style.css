@@ -383,6 +383,54 @@ form {
   border: #ccc solid 1px;
   margin-bottom: 15px; }
 
+/* Page Template */
+.como-funciona {
+  width: 85%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.cf-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.cf-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px; }
+
+.location-icon {
+  width: 35px;
+  height: 40px;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+
+.cf-text-block {
+  border-left: 1px solid #ccc;
+  padding: 10px 15px; }
+  .cf-text-block p {
+    font-size: .9em;
+    margin: 0; }
+
+.cf-text-block-on {
+  border-left: 2px solid #ef5a29; }
+
+.cf-images img {
+  width: 600px; }
+
 /* Movil */
 @media (max-width: 450px) {
   .blog-header {

@@ -11,10 +11,11 @@
 	</title>
 	<!-- Bootstrap core CSS -->
 	<link href="<?php bloginfo('template_url'); ?>/css/bootstrap.css" rel="stylesheet">
-
+	
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 	<?php wp_head(); ?>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/comofunciona.js"></script>
 	<style media="screen">
 		header {
 			background: url(
