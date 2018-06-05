@@ -23,11 +23,11 @@ Version: 1.0
   src: url(fonts/segoeprb.ttf); }
 
 @font-face {
-  font-family: third-font;
+  font-family: third-font-bold;
   src: url(fonts/Nilland-Black.ttf); }
 
 @font-face {
-  font-family: third-font-bold;
+  font-family: third-font;
   src: url(fonts/Nilland-Bold.ttf); }
 
 /*
@@ -227,7 +227,7 @@ ul, ol {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-family: third-font-bold;
+  font-family: third-font;
   font-size: 1.1em;
   background-color: #00a9a6; }
 
@@ -249,7 +249,7 @@ ul, ol {
     background-color: #00A098; }
 
 .active {
-  background-color: pink; }
+  font-family: third-font-bold; }
 
 .nav-link {
   position: relative;
@@ -261,22 +261,13 @@ ul, ol {
   color: #fff;
   background-color: transparent; }
 
-/* Active state gets a caret at the bottom */
-.nav-link.active {
-  color: #fff; }
-
-.nav-link.active::after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-left: -.3rem;
-  vertical-align: middle;
-  content: "";
-  border-right: .3rem solid transparent;
-  border-bottom: .3rem solid;
-  border-left: .3rem solid transparent; }
+.dropdown-toggle::after {
+  border: double #fff;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 3px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
 
 .dropdown:hover .dropdown-menu {
   display: block; }

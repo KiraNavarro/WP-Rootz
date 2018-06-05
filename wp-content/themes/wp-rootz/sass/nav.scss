@@ -6,7 +6,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	font-family: third-font-bold;
+	font-family: third-font;
 	font-size: 1.1em;
 	background-color: $green;
 }
@@ -33,7 +33,7 @@
 }
 
 .active {
-	background-color: pink;
+	font-family: third-font-bold;
 }
 
 .nav-link {
@@ -48,22 +48,12 @@
 	background-color: transparent;
 }
 
-/* Active state gets a caret at the bottom */
-.nav-link.active {
-	color: #fff;
-}
-.nav-link.active::after {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	margin-left: -.3rem;
-	vertical-align: middle;
-	content: "";
-	border-right: .3rem solid transparent;
-	border-bottom: .3rem solid;
-	border-left: .3rem solid transparent;
+.dropdown-toggle::after {
+	border: double #fff;
+	border-width: 0 4px 4px 0;
+	display: inline-block;
+	padding: 3px;
+	transform: rotate(45deg);
 }
 
 .dropdown:hover .dropdown-menu {
