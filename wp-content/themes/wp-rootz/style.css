@@ -112,20 +112,9 @@ ul, ol {
     height: 70px;
     left: 310px;
     -webkit-transform: rotate(45deg);
-    transform: rotate(45deg); }
-  .blog-logo:after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 10px;
-    z-index: -2;
-    background-color: #fff;
-    width: 70px;
-    height: 70px;
-    left: 330px;
-    top: 125px;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg); }
+    transform: rotate(45deg);
+    -webkit-box-shadow: 0 0 0 9pt #fff;
+    box-shadow: 0 0 0 9pt #fff; }
 
 .social-info {
   width: 100%;
