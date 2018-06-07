@@ -18,6 +18,12 @@ a.btn-custom-orange {
 	color: #fff;
 }
 
+a.btn-custom-green {
+	@extend .btn-base;
+	background-color: $green;
+	color: #fff;
+}
+
 .submit-container {
 	display: flex;
 	flex-direction: row;

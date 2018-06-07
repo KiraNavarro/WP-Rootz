@@ -57,7 +57,7 @@ h5,
 .h5,
 h6,
 .h6 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: primary-font;
 	font-weight: 400;
 	color: #333;
 }
@@ -73,6 +73,7 @@ $light-orange: #f58220;
 $orange: #f26522;
 $green: #00a9a6;
 $dark-green: #00A098;
+$purple: #63316C;
 
 @import "header";
 @import "footer";
