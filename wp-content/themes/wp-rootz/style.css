@@ -189,6 +189,28 @@ ul, ol {
   .footer p, .footer-1 p, .footer-2 p {
     margin: 0; }
 
+.colaboradores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2em 0; }
+  .colaboradores h2 {
+    font-family: third-font-bold;
+    color: #808285;
+    margin: 2em 0; }
+    .colaboradores h2 img {
+      margin-right: 3px;
+      padding-bottom: 6px; }
+  .colaboradores .logos-colaboradores {
+    margin: 0 0 4em 0; }
+
 .footer-1 {
   background-color: #f58220; }
 

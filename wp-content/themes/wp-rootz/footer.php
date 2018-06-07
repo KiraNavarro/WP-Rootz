@@ -1,4 +1,13 @@
 	<footer class="blog-footer">
+		<section class="colaboradores">
+			<h2><img src="<?php echo get_template_directory_uri().'/img/colaboradores/face.png' ?>">rgullosos de colaborar con:</h2>
+			<div class="logos-colaboradores">
+				<img src="<?php echo get_template_directory_uri().'/img/colaboradores/colab1.png' ?>">
+				<img src="<?php echo get_template_directory_uri().'/img/colaboradores/colab2.png' ?>">
+				<img src="<?php echo get_template_directory_uri().'/img/colaboradores/colab3.png' ?>">
+				<img src="<?php echo get_template_directory_uri().'/img/colaboradores/colab4.png' ?>">
+			</div>
+		</section>
 		<section class="footer-1">
 			<p>Sultepec 41, Hipódromo Condesa, CDMX</p>
 			<p>Tel. (55) 26 14 59 73  / Móvil 044 (55) 76 65 28 10</p>

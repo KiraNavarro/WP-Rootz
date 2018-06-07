@@ -16,6 +16,25 @@
 	}
 }
 
+.colaboradores {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em 0;
+	h2 {
+		font-family: third-font-bold;
+		color: #808285;
+		margin: 2em 0;
+		img {
+			margin-right: 3px;
+			padding-bottom: 6px;
+		}
+	}
+	.logos-colaboradores{
+		margin: 0 0 4em 0;
+	}
+}
+
 .footer-1 {
 	@extend .footer; 
 	background-color: $light-orange;
