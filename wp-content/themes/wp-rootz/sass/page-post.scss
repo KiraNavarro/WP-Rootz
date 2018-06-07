@@ -1,6 +1,25 @@
 /*
-* Blog posts
+* Page posts
 */
+
+.page-main {
+	margin-top: 3rem;
+	h1 {
+		color: $orange;
+		font-family: secondary-font;
+	}
+	h2 {
+		color: $green;
+		font-family: secondary-font;
+	}
+	h4 {
+		color: $dark-gray;   
+	}
+	h5, a {
+		color: $green;
+	}
+}
+
 .page-post {
 	margin-bottom: 4rem;
 }

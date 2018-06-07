@@ -1,0 +1,33 @@
+/*
+* Custom Buttons
+*/
+
+.btn-base {
+	padding: 10px 30px;
+	border-radius: 0px 5px;
+	font-size: .9em;
+	transition: all .2s ease-in-out;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+a.btn-custom-orange {
+	@extend .btn-base;
+	background-color: $orange;
+	color: #fff;
+}
+
+.submit-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding: 0;
+}
+
+.submit-btn {
+	@extend .btn-base;
+	background-color: $orange;
+	color: #fff;
+	margin: 10px 15px;
+}
