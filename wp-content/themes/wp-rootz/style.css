@@ -5,31 +5,6 @@ Author URI: http://www.kiraproject.net/
 Description: Theme base.
 Version: 1.0
 */
-/* FONTS */
-@font-face {
-  font-family: primary-font;
-  src: url(fonts/HelveticaNeueLTCom-Roman.ttf); }
-
-@font-face {
-  font-family: primary-font-bold;
-  src: url(fonts/HelveticaNeueLTCom-Bd.ttf); }
-
-@font-face {
-  font-family: secondary-font;
-  src: url(fonts/segoepr.ttf); }
-
-@font-face {
-  font-family: secondary-font-bold;
-  src: url(fonts/segoeprb.ttf); }
-
-@font-face {
-  font-family: third-font-bold;
-  src: url(fonts/Nilland-Black.ttf); }
-
-@font-face {
-  font-family: third-font;
-  src: url(fonts/Nilland-Bold.ttf); }
-
 /*
 * Globals
 */
@@ -59,6 +34,31 @@ h6,
 
 ul, ol {
   padding: 0; }
+
+/* FONTS */
+@font-face {
+  font-family: primary-font;
+  src: url(fonts/HelveticaNeueLTCom-Roman.ttf); }
+
+@font-face {
+  font-family: primary-font-bold;
+  src: url(fonts/HelveticaNeueLTCom-Bd.ttf); }
+
+@font-face {
+  font-family: secondary-font;
+  src: url(fonts/segoepr.ttf); }
+
+@font-face {
+  font-family: secondary-font-bold;
+  src: url(fonts/segoeprb.ttf); }
+
+@font-face {
+  font-family: third-font-bold;
+  src: url(fonts/Nilland-Black.ttf); }
+
+@font-face {
+  font-family: third-font;
+  src: url(fonts/Nilland-Bold.ttf); }
 
 /* Colors */
 /*
@@ -490,7 +490,7 @@ ul, ol {
   margin-bottom: 4rem; }
 
 .page-post-title {
-  margin-bottom: .25rem;
+  margin-bottom: 2rem;
   font-size: 2.5rem;
   text-align: center; }
 
@@ -721,6 +721,144 @@ a.btn-custom-green {
   background-color: #f26522;
   color: #fff;
   margin: 10px 15px; }
+
+.custom-template {
+  text-align: center; }
+  .custom-template h2, .custom-template h4 {
+    color: #fff;
+    margin-bottom: 2em; }
+  .custom-template h2 {
+    font-family: secondary-font; }
+  .custom-template h4 {
+    font-size: 1.2em;
+    font-family: primary-font-bold; }
+
+.sobre-c2a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  text-align: right;
+  width: 80%;
+  margin: auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .sobre-c2a p {
+    margin-right: 4em; }
+
+.custom-template-cv {
+  text-align: center;
+  margin: 4em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .custom-template-cv h2 {
+    color: #f26522;
+    font-family: third-font-bold;
+    font-size: 2.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .custom-template-cv h2 img {
+      margin-left: .8em; }
+
+.pleca-naranja, .pleca-naranja-left, .pleca-naranja-right {
+  background-color: #f26522;
+  z-index: 2;
+  position: relative;
+  width: 20%;
+  height: 60px; }
+
+.pleca-naranja-left:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4px;
+  z-index: -1;
+  background-color: #f26522;
+  width: 44px;
+  height: 44px;
+  top: 8px;
+  right: -21px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.pleca-naranja-right:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4px;
+  z-index: -1;
+  background-color: #f26522;
+  width: 44px;
+  height: 44px;
+  top: 8px;
+  left: -21px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.custom-template-cv-text em {
+  font-family: secondary-font; }
+
+.custom-template-contacto {
+  margin: 4em 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.contacto-title {
+  text-align: left;
+  margin-left: 2em; }
+  .contacto-title h2 {
+    color: #f26522;
+    font-family: secondary-font-bold;
+    font-size: 2.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .contacto-title h4 {
+    font-size: 1.2em;
+    font-family: primary-font-bold;
+    color: #808285; }
 
 /*
 * Override Bootstrap's default container.
