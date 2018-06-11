@@ -19,19 +19,19 @@
 		.header-img {
 			background: url( 
 				<?php if (is_page('contacto')) : ?>
-					<?php echo get_template_directory_uri().'/img/header-img-1.jpg' ?>
+					<?php echo get_template_directory_uri().'/img/headers/header-contacto.jpg' ?>
 				<?php elseif (is_front_page()) : ?>
-					<?php echo get_template_directory_uri().'/img/header-img-1.jpg' ?>
-				<?php elseif (is_page('beneficios'))  : ?>
-					<?php echo get_template_directory_uri().'/img/header-img-1.jpg' ?>
-				<?php elseif (is_page('gas-natural'))  : ?>
-					<?php echo get_template_directory_uri().'/img/header-img-1.jpg' ?>
-				<?php elseif (is_page('proyectos'))  : ?>
-					<?php echo get_template_directory_uri().'/img/header-img-1.jpg' ?>
-				<?php elseif (is_page('soluciones'))  : ?>
-					<?php echo get_template_directory_uri().'/img/header-img-1.jpg' ?>
+					<?php echo get_template_directory_uri().'/img/headers/header-home.jpg' ?>
+				<?php elseif (is_page('sobre-c2a'))  : ?>
+					<?php echo get_template_directory_uri().'/img/headers/header-sobre-c2a.jpg' ?>
+				<?php elseif (is_page('conferencias'))  : ?>
+					<?php echo get_template_directory_uri().'/img/headers/header-conferencias.jpg' ?>
+				<?php elseif (is_page('adriana-castro'))  : ?>
+					<?php echo get_template_directory_uri().'/img/headers/header-adriana.jpg' ?>
+				<?php elseif (is_page('blog'))  : ?>
+					<?php echo get_template_directory_uri().'/img/headers/header-blog.jpg' ?>
 				<?php else : ?>
-					<?php echo get_template_directory_uri().'/img/header-img-1.jpg' ?>
+					<?php echo get_template_directory_uri().'/img/headers/header-home.jpg' ?>
 				<?php endif; ?>) no-repeat;
 				
 			background-size: cover;
@@ -72,7 +72,7 @@
 				</div>
 			</div>
 			<div class="blog-header">
-				<div class="test">
+				<div class="blog-logo-wrapper">
 					<div class="blog-logo">
 						<a href="<?php echo get_home_url(); ?>">
 							<img src="<?php echo get_template_directory_uri().'/img/site-logo.png' ?>" alt="Site logo">
@@ -102,7 +102,6 @@
 				</div>
 			</div>
 			<div class="header-img">
-				<p>Hola Jess</p>
 			</div>
 		</div>
 		

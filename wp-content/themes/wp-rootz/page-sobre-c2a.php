@@ -17,9 +17,6 @@ get_header(); ?>
 			<?php if( have_posts()) : ?>
 				<?php while( have_posts()) : the_post(); ?>
 					<div class="page-post">
-						<h1 class="page-post-title">
-							<?php the_title(); ?>
-						</h1>
 						<?php the_content(); ?>
 					</div><!-- /.blog-post -->
 				<?php endwhile; ?>

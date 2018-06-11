@@ -18,9 +18,10 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	background-color: $green;
 }
 
-.test {
+.blog-logo-wrapper {
 	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 	width: 650px;
 	background-color: $green;

@@ -84,9 +84,10 @@ ul, ol {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  background-color: #00a9a6; }
 
-.test {
+.blog-logo-wrapper {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   width: 650px;
@@ -239,8 +240,7 @@ ul, ol {
   -ms-flex-pack: center;
   justify-content: center;
   font-family: third-font;
-  font-size: 1.1em;
-  background-color: #00a9a6; }
+  font-size: 1.1em; }
 
 .menu-item {
   height: 100%;
@@ -475,16 +475,16 @@ ul, ol {
 */
 .page-main {
   margin-top: 3rem; }
-  .page-main h1 {
-    color: #f26522;
+  .page-main h1, .page-main h2, .page-main h3, .page-main h4, .page-main h5 {
     font-family: secondary-font; }
+  .page-main h1, .page-main h3, .page-main h4, .page-main h6 {
+    color: #f26522; }
   .page-main h2 {
     color: #00a9a6;
     font-family: secondary-font; }
-  .page-main h4 {
-    color: #302e2f; }
   .page-main h5, .page-main a {
-    color: #00a9a6; }
+    color: #00a9a6;
+    font-family: secondary-font; }
 
 .page-post {
   margin-bottom: 4rem; }

@@ -4,19 +4,19 @@
 
 .page-main {
 	margin-top: 3rem;
-	h1 {
-		color: $orange;
+	h1,h2,h3,h4,h5 {
 		font-family: secondary-font;
+	}
+	h1,h3,h4,h6 {
+		color: $orange;
 	}
 	h2 {
 		color: $green;
 		font-family: secondary-font;
 	}
-	h4 {
-		color: $dark-gray;   
-	}
 	h5, a {
 		color: $green;
+		font-family: secondary-font;
 	}
 }
 
