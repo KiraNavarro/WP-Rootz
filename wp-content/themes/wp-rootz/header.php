@@ -28,7 +28,7 @@
 					<?php echo get_template_directory_uri().'/img/headers/header-conferencias.jpg' ?>
 				<?php elseif (is_page('adriana-castro'))  : ?>
 					<?php echo get_template_directory_uri().'/img/headers/header-adriana.jpg' ?>
-				<?php elseif (is_page('blog'))  : ?>
+				<?php elseif (is_home())  : ?>
 					<?php echo get_template_directory_uri().'/img/headers/header-blog.jpg' ?>
 				<?php else : ?>
 					<?php echo get_template_directory_uri().'/img/headers/header-home.jpg' ?>
