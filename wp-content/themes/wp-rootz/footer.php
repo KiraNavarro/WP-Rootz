@@ -2,10 +2,13 @@
 		<section class="colaboradores">
 			<h2><img src="<?php echo get_template_directory_uri().'/img/colaboradores/face.png' ?>">rgullosos de colaborar con:</h2>
 			<div class="logos-colaboradores">
-				<img src="<?php echo get_template_directory_uri().'/img/colaboradores/colab1.png' ?>">
-				<img src="<?php echo get_template_directory_uri().'/img/colaboradores/colab2.png' ?>">
-				<img src="<?php echo get_template_directory_uri().'/img/colaboradores/colab3.png' ?>">
-				<img src="<?php echo get_template_directory_uri().'/img/colaboradores/colab4.png' ?>">
+				<?php 
+					$numbers = range(1, 17);
+					shuffle($numbers);
+					for ($x = 0; $x <= 3; $x++) { 
+				?>
+						<img src="<?php echo get_template_directory_uri().'/img/colaboradores/colab'. $numbers[$x].'.png' ?>">
+				<?php } ?>
 			</div>
 		</section>
 		<section class="footer-1">
