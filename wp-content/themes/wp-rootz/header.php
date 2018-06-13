@@ -15,28 +15,6 @@
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 	<?php wp_head(); ?>
-	<style media="screen">
-		.header-img {
-			background: url( 
-				<?php if (is_page('contacto')) : ?>
-					<?php echo get_template_directory_uri().'/img/headers/header-contacto.jpg' ?>
-				<?php elseif (is_front_page()) : ?>
-					<?php echo get_template_directory_uri().'/img/headers/header-home.jpg' ?>
-				<?php elseif (is_page('sobre-c2a'))  : ?>
-					<?php echo get_template_directory_uri().'/img/headers/header-sobre-c2a.jpg' ?>
-				<?php elseif (is_page('conferencias'))  : ?>
-					<?php echo get_template_directory_uri().'/img/headers/header-conferencias.jpg' ?>
-				<?php elseif (is_page('adriana-castro'))  : ?>
-					<?php echo get_template_directory_uri().'/img/headers/header-adriana.jpg' ?>
-				<?php elseif (is_home())  : ?>
-					<?php echo get_template_directory_uri().'/img/headers/header-blog.jpg' ?>
-				<?php else : ?>
-					<?php echo get_template_directory_uri().'/img/headers/header-home.jpg' ?>
-				<?php endif; ?>) no-repeat;
-				
-			background-size: cover;
-		}
-	</style>
 </head>
 
 <body>
@@ -102,6 +80,21 @@
 				</div>
 			</div>
 			<div class="header-img">
+				<?php if (is_page('contacto')) : ?>
+					<img src="<?php echo get_template_directory_uri().'/img/headers/header-contacto.jpg' ?>">
+				<?php elseif (is_front_page()) : ?>
+					<img src="<?php echo get_template_directory_uri().'/img/headers/header-home.jpg' ?>">
+				<?php elseif (is_page('sobre-c2a'))  : ?>
+					<img src="<?php echo get_template_directory_uri().'/img/headers/header-sobre-c2a.jpg' ?>">
+				<?php elseif (is_page('conferencias'))  : ?>
+					<img src="<?php echo get_template_directory_uri().'/img/headers/header-conferencias.jpg' ?>">
+				<?php elseif (is_page('adriana-castro'))  : ?>
+					<img src="<?php echo get_template_directory_uri().'/img/headers/header-adriana.jpg' ?>">
+				<?php elseif (is_home())  : ?>
+					<img src="<?php echo get_template_directory_uri().'/img/headers/header-blog.jpg' ?>">
+				<?php else : ?>
+					<img src="<?php echo get_template_directory_uri().'/img/headers/header-home.jpg' ?>">
+				<?php endif; ?>
 			</div>
 		</div>
 		

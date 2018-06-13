@@ -158,10 +158,9 @@ ul, ol {
   .social-ctamx p, .social-adriana p {
     margin-top: 18px; }
 
-.header-img {
-  height: 500px; }
-  .header-img img {
-    height: 500px; }
+.header-img img {
+  width: 100%;
+  height: auto; }
 
 @media (min-width: 40em) {
   .blog-title {
@@ -916,6 +915,20 @@ a.btn-custom-green {
     font-weight: normal; }
     .blog-footer h2 img {
       width: 40px; }
+  .logos-colaboradores {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .footer-1, .footer-2 {
     padding: 25px;
     -webkit-box-orient: vertical;
@@ -925,7 +938,44 @@ a.btn-custom-green {
   .footer-2 a {
     margin: .8em 0; }
   .footer-2 img {
-    margin-right: 5px; } }
+    margin-right: 5px; }
+  .custom-template-cv h2 {
+    margin: 0 2em;
+    font-size: 1.5em; }
+  .custom-template-contacto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .custom-template-contacto img {
+      margin-bottom: 1em; }
+  .mensaje {
+    border: 1px solid #fff; }
+  .blog-post {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .blog-post:nth-child(even) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+  .blog-main-single, .blog-main {
+    width: 90%; }
+  .sobre-c2a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    width: 90%; }
+    .sobre-c2a p {
+      margin: 0; }
+  table {
+    width: 100%; }
+  td:first-child {
+    display: none; } }
 
 /*
 * Override Bootstrap's default container.
