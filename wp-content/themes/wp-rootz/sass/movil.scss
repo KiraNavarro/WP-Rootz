@@ -1,0 +1,73 @@
+/* Movil */
+@media (max-width: 460px) {
+	.social-info {
+		flex-direction: column;
+	}
+	
+	.blog-logo {
+		width: 200px;
+		&:before {
+			left: 150px;
+		}
+		img {
+			margin-left: 30px;
+		}	
+	}
+	
+	.navbar-collapse {
+		background-color: $green;
+		position: relative;
+		width: 300px;
+		top: 21px;
+		left: -150px;
+	}
+	
+	.front-page h2 {
+		text-align: center;
+	}
+	
+	.intro-boxes {
+		flex-direction: column;
+	}
+	
+	.intro-box {
+		width: 100%;
+		border-right: 0;
+		margin-top: 2em;
+		border-bottom: dashed 1px #fff;
+		&:first-child {
+			margin-top: 0;
+		}
+		h4:before, h4:after {
+			width: 23px;
+			height: 23px;
+		}
+	}
+	
+	.blog-footer {
+		h2 {
+			font-size: 1.4em;
+			font-weight: normal;
+			img {
+				width: 40px;
+			}
+		}
+	}
+	
+	.footer-1, .footer-2 {
+		padding: 25px;
+		flex-direction: column;
+	}
+	
+	.footer-2 {
+		a{
+			margin: .8em 0; 
+		}
+		
+		img {
+			margin-right: 5px;;
+		}
+	}
+	
+		
+}

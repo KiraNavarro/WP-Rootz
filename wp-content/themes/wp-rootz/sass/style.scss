@@ -75,6 +75,8 @@ $green: #00a9a6;
 $dark-green: #00A098;
 $purple: #63316C;
 
+/* Imports */
+
 @import "header";
 @import "footer";
 @import "nav";
@@ -87,6 +89,7 @@ $purple: #63316C;
 @import "contact";
 @import "buttons";
 @import "custom-templates";
+@import "movil";
 
 /*
 * Override Bootstrap's default container.

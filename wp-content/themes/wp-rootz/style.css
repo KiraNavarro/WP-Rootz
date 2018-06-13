@@ -61,6 +61,7 @@ ul, ol {
   src: url(fonts/Nilland-Bold.ttf); }
 
 /* Colors */
+/* Imports */
 /*
 * Masthead for nav
 */
@@ -521,6 +522,20 @@ img.aligncenter {
   margin-left: auto;
   margin-right: auto; }
 
+table tr {
+  display: block;
+  padding-top: 4em; }
+  table tr:first-child {
+    padding-top: 0; }
+
+table td {
+  border-right: dashed 1px #f26522;
+  padding: 1.5em; }
+  table td:last-child {
+    border-right: none; }
+  table td p {
+    font-size: .8em; }
+
 /*
 * Blog posts
 */
@@ -859,6 +874,58 @@ a.btn-custom-green {
     font-size: 1.2em;
     font-family: primary-font-bold;
     color: #808285; }
+
+/* Movil */
+@media (max-width: 460px) {
+  .social-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .blog-logo {
+    width: 200px; }
+    .blog-logo:before {
+      left: 150px; }
+    .blog-logo img {
+      margin-left: 30px; }
+  .navbar-collapse {
+    background-color: #00a9a6;
+    position: relative;
+    width: 300px;
+    top: 21px;
+    left: -150px; }
+  .front-page h2 {
+    text-align: center; }
+  .intro-boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .intro-box {
+    width: 100%;
+    border-right: 0;
+    margin-top: 2em;
+    border-bottom: dashed 1px #fff; }
+    .intro-box:first-child {
+      margin-top: 0; }
+    .intro-box h4:before, .intro-box h4:after {
+      width: 23px;
+      height: 23px; }
+  .blog-footer h2 {
+    font-size: 1.4em;
+    font-weight: normal; }
+    .blog-footer h2 img {
+      width: 40px; }
+  .footer-1, .footer-2 {
+    padding: 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .footer-2 a {
+    margin: .8em 0; }
+  .footer-2 img {
+    margin-right: 5px; } }
 
 /*
 * Override Bootstrap's default container.
