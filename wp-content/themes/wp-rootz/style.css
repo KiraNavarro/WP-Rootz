@@ -89,8 +89,6 @@ ul, ol {
   background-color: #00a9a6; }
 
 .blog-logo-wrapper {
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   width: 650px;
   background-color: #00a9a6; }
 
@@ -99,7 +97,9 @@ ul, ol {
   z-index: 2;
   width: 350px;
   background-color: #f58220;
-  margin-right: 80px; }
+  margin-right: 80px;
+  position: relative;
+  z-index: 3; }
   .blog-logo img {
     width: 150px;
     margin: 15px 10px 15px 200px; }
@@ -112,15 +112,20 @@ ul, ol {
     background-color: #f58220;
     width: 70px;
     height: 70px;
-    left: 310px;
+    left: 330px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    -webkit-box-shadow: 0 0 0 9pt #fff;
-    box-shadow: 0 0 0 9pt #fff; }
+    -webkit-box-shadow: 10px -1px 0px 0px #fff, 10px -11px 0px 0px #fff;
+    box-shadow: 10px -1px 0px 0px #fff, 10px -11px 0px 0px #fff; }
+
+.header-social {
+  background-color: #fff;
+  position: relative;
+  z-index: 4; }
 
 .social-info {
   width: 100%;
-  margin: 15px 0;
+  padding: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,7 +165,9 @@ ul, ol {
 
 .header-img img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  position: relative;
+  z-index: 3; }
 
 @media (min-width: 40em) {
   .blog-title {
@@ -240,7 +247,9 @@ ul, ol {
   -ms-flex-pack: center;
   justify-content: center;
   font-family: third-font;
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  position: relative;
+  z-index: 5; }
 
 .menu-item {
   height: 100%;

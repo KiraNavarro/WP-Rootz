@@ -21,8 +21,8 @@
 	
 	<header>
 		<div class="blog-masthead">
-			<div class="container">
-				<div class="social-info">
+			<div class="header-social">
+				<div class="container social-info">
 					<div class="social-ctamx">
 						<a href="#">
 							<img src="<?php echo get_template_directory_uri().'/img/facebook.png' ?>" alt="Facebook CTAMX">
