@@ -54,12 +54,51 @@
 		}
 	}
 	
+	.reviews {
+		flex-direction: column;
+		padding: 0 1em;
+	}
+	
+	.review {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.review-text {
+		font-size: .7em;
+		padding: .5em;
+	}
+	
+	.quote-open, .quote-close {
+		width: 20px;
+	}
+	
+	.prev, .next {
+		padding: .5em !important; 
+	}
+	
+	.btn-custom-green {
+		margin-top: 2em;
+	}
+	
 	.logos-colaboradores {
 		width: 100%;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
+	}
+	
+	.mySlides {
+		width: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		img {
+			margin-top: 1em;
+		}
 	}
 	
 	.footer-1, .footer-2 {

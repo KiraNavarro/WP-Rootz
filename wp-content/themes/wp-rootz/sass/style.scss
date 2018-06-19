@@ -90,6 +90,7 @@ $purple: #63316C;
 @import "buttons";
 @import "custom-templates";
 @import "movil";
+@import "slider";
 
 /*
 * Override Bootstrap's default container.
@@ -97,4 +98,3 @@ $purple: #63316C;
 .container {
 	max-width: 60rem;
 }
-

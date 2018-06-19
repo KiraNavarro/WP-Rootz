@@ -33,26 +33,81 @@
 		</div>
 	</section>
 	
-	<div class="container front-page">		
+	<div class="front-page">		
 		<section class="reviews">
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 			<div class="review">
-				<div class="review-comment">
-					<img class="quote-open" src="<?php echo get_template_directory_uri().'/img/quotes/quote-open.png' ?>">
-					<div class="review-text">
-						<span>Comprendieron perfectamente cuál era mi necesidad y cómo quería impactar en cada uno de mi eventos.</span>
-						<p>Gracias a Call2action actualmente tenemos el doble de asistentes en comparación con años anteriores debido a los buenos resultados.</p>
+				<div class="mySlides2 fade">
+					<div class="review-comment">
+						<img class="quote-open" src="<?php echo get_template_directory_uri().'/img/quotes/quote-open.png' ?>">
+						<div class="review-text">
+							<span>Comprendieron perfectamente cuál era mi necesidad y cómo quería impactar en cada uno de mi eventos.</span>
+							<p>Gracias a Call2action actualmente tenemos el doble de asistentes en comparación con años anteriores debido a los buenos resultados.</p>
+						</div>
+						<img class="quote-close" src="<?php echo get_template_directory_uri().'/img/quotes/quote-close.png' ?>">
 					</div>
-					<img class="quote-close" src="<?php echo get_template_directory_uri().'/img/quotes/quote-close.png' ?>">
+					<div class="review-author">
+						<p>
+							<span>Samantha García Bernal</span></br>
+							Hospitals Marketing Coordinator</br>
+							<span>PEH BIOH Pﬁzer México</span>
+						</p>
+					</div>
 				</div>
-				<div class="review-author">
-					<p>
-						<span>Samantha García Bernal</span></br>
-						Hospitals Marketing Coordinator</br>
-						<span>PEH BIOH Pﬁzer México</span>
-					</p>
+				<div class="mySlides2 fade">
+					<div class="review-comment">
+						<img class="quote-open" src="<?php echo get_template_directory_uri().'/img/quotes/quote-open.png' ?>">
+						<div class="review-text">
+							<span>Agradecemos el apoyo y excelente desempeño de Call2Action en nuestra "Convención Internacional: El Gran Concierto Immunotec”, dirigida a 3000 personas.</span>
+							<p>Su colaboración destacó por el notable profesionalismo demostrado, por su capacidad y actitud durante todo nuestro evento. Reciban nuestro reconocimiento.</p>
+						</div>
+						<img class="quote-close" src="<?php echo get_template_directory_uri().'/img/quotes/quote-close.png' ?>">
+					</div>
+					<div class="review-author">
+						<p>
+							<span>Lic. Gabriela Moreno S.</span></br>
+							Vicepresidente América Latina y Directora General</br>
+							<span>Immunotec México</span>
+						</p>
+					</div>
 				</div>
+				<div class="mySlides2 fade">
+					<div class="review-comment">
+						<img class="quote-open" src="<?php echo get_template_directory_uri().'/img/quotes/quote-open.png' ?>">
+						<div class="review-text">
+							<span>El mensaje más relevante que nos transmitieron en la conferencia fue:</span>
+							<p>“Conoce tus talentos, desarróllalos y fortalécelos; que para eso estás hecho”.</p>
+						</div>
+						<img class="quote-close" src="<?php echo get_template_directory_uri().'/img/quotes/quote-close.png' ?>">
+					</div>
+					<div class="review-author">
+						<p>
+							<span>Graciela Figueroa</span></br>
+							Gerente de Desarrollo Organizacional</br>
+							<span>SONY</span>
+						</p>
+					</div>
+				</div>
+				<div class="mySlides2 fade">
+					<div class="review-comment">
+						<img class="quote-open" src="<?php echo get_template_directory_uri().'/img/quotes/quote-open.png' ?>">
+						<div class="review-text">
+							<span>Los artículos de Adriana para nuestra revista son claros, directos, fundamentados y tienen su toque personal</span>
+						</div>
+						<img class="quote-close" src="<?php echo get_template_directory_uri().'/img/quotes/quote-close.png' ?>">
+					</div>
+					<div class="review-author">
+						<p>
+							<span>José Luis Sánchez Espíritu</span></br>
+							Editor</br>
+							<span>Revista Expansión</span>
+						</p>
+					</div>
+				</div>
+				<a href="contacto" class="btn-custom-green">Contáctanos</a>
 			</div>
-			<a href="contacto" class="btn-custom-green">Contáctanos</a>
+			
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 		</section>
 	</div>
 </div>
