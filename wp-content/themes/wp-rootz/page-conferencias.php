@@ -5,7 +5,7 @@
 get_header(); ?>
 	<div class="orange-bg">
 		<div class="container custom-template">
-			<h2>Estás organizando un evento, ya sea una convención, congreso, reuniones Kick off o lanzamiento de producto?</h2>
+			<h2>¿Estás organizando un evento, ya sea una convención, congreso, reuniones Kick off o lanzamiento de producto?</h2>
 			<h4>Ofrecemos conferencias poderosas que cautivan audiencias.</h4>
 			<a href="contacto" class="btn-custom-green">Contáctanos</a>
 		</div>

@@ -24,25 +24,25 @@
 			<div class="header-social">
 				<div class="container social-info">
 					<div class="social-ctamx">
-						<a href="#">
+						<a href="https://www.facebook.com/CTAMX/" target="_blank">
 							<img src="<?php echo get_template_directory_uri().'/img/facebook.png' ?>" alt="Facebook CTAMX">
 						</a>
-						<a href="#">
+						<a href="#" target="_blank">
 							<img src="<?php echo get_template_directory_uri().'/img/linkedin.png' ?>" alt="Linkedin CTAMX">
 						</a>
-						<a href="#">
+						<a href="https://www.youtube.com/channel/UC5iCZ3YTFMs_huboPuYqYFQ" target="_blank">
 							<img src="<?php echo get_template_directory_uri().'/img/youtube.png' ?>" alt="Youtube CTAMX">
 						</a>
 						<p><b>: CTAMX</b></p>
 					</div>
 					<div class="social-adriana">
-						<a href="#">
+						<a href="https://www.facebook.com/adrianacastromx/?ref=bookmarks" target="_blank">
 							<img src="<?php echo get_template_directory_uri().'/img/facebook.png' ?>" alt="Facebook Adriana Castro MX">
 						</a>
-						<a href="#">
+						<a href="https://www.linkedin.com/in/adriana-castro-589465151/" target="_blank">
 							<img src="<?php echo get_template_directory_uri().'/img/linkedin.png' ?>" alt="Linkedin Adriana Castro MX">
 						</a>
-						<a href="#">
+						<a href="#" target="_blank">
 							<img src="<?php echo get_template_directory_uri().'/img/youtube.png' ?>" alt="Youtube Adriana Castro MX">
 						</a>
 						<p><b>: adriana</b>castro<b>mx</b></p>

@@ -29,13 +29,12 @@
 	<section class="destacado">
 		<div class="container destacado-content">	
 			<p><b>¿Te imaginas un evento en el que se mejoren las relaciones entre tus asistentes y se maximice la comunicación entre ellos?</b></p>
-			<p>Nosotros te ayudamos a logralo. Convertimos tu próximo evento en uno que inspire e impacte basándonos en estrategias de Ciencias de la Felicidad.</p>
+			<p>Nosotros te ayudamos a lograrlo. Convertimos tu próximo evento en uno que inspire e impacte basándonos en estrategias de Ciencias de la Felicidad.</p>
 		</div>
 	</section>
 	
 	<div class="front-page">		
 		<section class="reviews">
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 			<div class="review">
 				<div class="mySlides2 fade">
 					<div class="review-comment">
@@ -92,7 +91,7 @@
 					<div class="review-comment">
 						<img class="quote-open" src="<?php echo get_template_directory_uri().'/img/quotes/quote-open.png' ?>">
 						<div class="review-text">
-							<span>Los artículos de Adriana para nuestra revista son claros, directos, fundamentados y tienen su toque personal</span>
+							<span>Los artículos de Adriana para nuestra revista son claros, directos, fundamentados y tienen su toque personal.</span>
 						</div>
 						<img class="quote-close" src="<?php echo get_template_directory_uri().'/img/quotes/quote-close.png' ?>">
 					</div>
@@ -106,8 +105,6 @@
 				</div>
 				<a href="contacto" class="btn-custom-green">Contáctanos</a>
 			</div>
-			
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 		</section>
 	</div>
 </div>
