@@ -84,6 +84,16 @@ header {
 	height: 650px;
 }
 
+.headers {
+	width: 100%;
+	height: 650px;
+	position: absolute;
+	z-index: -1;
+	img {
+		width: 100%;
+	}
+}
+
 .blog-info {
 	color: $orange;
 	display: flex;
@@ -471,3 +481,4 @@ form {
 }
 
 @import "movil";
+@import "slider";

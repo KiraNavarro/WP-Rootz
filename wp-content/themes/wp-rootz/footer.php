@@ -17,5 +17,6 @@
 	<script>
 		$( "table" ).wrap( "<div class='table-responsive'></div>" );
 	</script>
+	<script src="<?php bloginfo('template_url'); ?>/js/slider.js"></script>
 </body>
 </html>

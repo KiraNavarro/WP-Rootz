@@ -17,28 +17,6 @@
 	<?php wp_head(); ?>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/comofunciona.js"></script>
 	<style media="screen">
-		header {
-			background: url(
-				<?php if (is_front_page()) : ?>
-					<?php echo get_template_directory_uri().'/img/head-1.jpg' ?>
-				<?php elseif (is_page('soluciones')) : ?>
-					<?php echo get_template_directory_uri().'/img/soluciones-header.jpg' ?>
-				<?php elseif (is_page('administracion-de-flotas'))  : ?>
-					<?php echo get_template_directory_uri().'/img/administracion-de-flotas-header.jpg' ?>
-				<?php elseif (is_page('ubiq-bus'))  : ?>
-					<?php echo get_template_directory_uri().'/img/ubiq-bus-header.jpg' ?>
-				<?php elseif (is_page('ubiq-logistics'))  : ?>
-					<?php echo get_template_directory_uri().'/img/ubiq-logistics-header.jpg' ?>
-				<?php elseif (is_page('gpss'))  : ?>
-					<?php echo get_template_directory_uri().'/img/gpss-header.jpg' ?>
-				<?php elseif (is_page('iot'))  : ?>
-					<?php echo get_template_directory_uri().'/img/iot-header.jpg' ?>
-				<?php else : ?>
-					<?php echo get_template_directory_uri().'/img/head-1.jpg' ?>
-				<?php endif; ?>) no-repeat;
-				background-size: cover;
-				background-position: center;
-		}
 		.blog-logo {
 			background: url(
 				<?php if (is_front_page()) : ?>
@@ -93,6 +71,29 @@
 <body>
 
 	<header>
+		<div class="headers">
+			<div class="mySlides fade">
+				<img src="<?php echo get_template_directory_uri().'/img/headers/header-1.jpg' ?>">
+			</div>
+			<div class="mySlides fade">
+				<img src="<?php echo get_template_directory_uri().'/img/headers/header-2.jpg' ?>">
+			</div>
+			<div class="mySlides fade">
+				<img src="<?php echo get_template_directory_uri().'/img/headers/header-3.jpg' ?>">
+			</div>
+			<div class="mySlides fade">
+				<img src="<?php echo get_template_directory_uri().'/img/headers/header-4.jpg' ?>">
+			</div>
+			<div class="mySlides fade">
+				<img src="<?php echo get_template_directory_uri().'/img/headers/header-5.jpg' ?>">
+			</div>
+			<div class="mySlides fade">
+				<img src="<?php echo get_template_directory_uri().'/img/headers/header-6.jpg' ?>">
+			</div>
+			<div class="mySlides fade">
+				<img src="<?php echo get_template_directory_uri().'/img/headers/header-7.jpg' ?>">
+			</div>
+		</div>
 		<div class="blog-masthead">
 			<div class="container blog-header">
 				<div class="blog-logo">
