@@ -32,8 +32,8 @@
 			</div>
 		</section>
 		<section class="footer-1">
-			<p>Sultepec 41, Hipódromo Condesa, CDMX</p>
-			<p>Tel. (55) 26 14 59 73  / Móvil 044 (55) 76 65 28 10</p>
+			<p><?php echo get_theme_mod('contact_address') ?></p>
+			<p>Tel. <?php echo get_theme_mod('contact_phone') ?>  / Móvil <?php echo get_theme_mod('contact_mobile_phone') ?></p>
 		</section>
 		<section class="footer-2">
 			<a href="http://mtpublicidad.com.mx/" target="blank"><?php echo Date('Y'); ?> MT Publicidad</a>

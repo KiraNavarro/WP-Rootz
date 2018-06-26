@@ -24,28 +24,44 @@
 			<div class="header-social">
 				<div class="container social-info">
 					<div class="social-ctamx">
-						<a href="https://www.facebook.com/CTAMX/" target="_blank">
-							<img src="<?php echo get_template_directory_uri().'/img/facebook.png' ?>" alt="Facebook CTAMX">
-						</a>
-						<a href="#" target="_blank">
-							<img src="<?php echo get_template_directory_uri().'/img/linkedin.png' ?>" alt="Linkedin CTAMX">
-						</a>
-						<a href="https://www.youtube.com/channel/UC5iCZ3YTFMs_huboPuYqYFQ" target="_blank">
-							<img src="<?php echo get_template_directory_uri().'/img/youtube.png' ?>" alt="Youtube CTAMX">
-						</a>
-						<p><b>: CTAMX</b></p>
+						<?php if( get_theme_mod('facebook-cta') ) {?>
+							<a href="<?php echo get_theme_mod('facebook-cta') ?>" target="_blank">
+								<img src="<?php echo get_template_directory_uri().'/img/facebook.png' ?>" alt="Facebook CTAMX">
+							</a>
+						<?php } ?>
+						<?php if( get_theme_mod('linkedin-cta') ) {?>
+							<a href="<?php echo get_theme_mod('linkedin-cta') ?>" target="_blank">
+								<img src="<?php echo get_template_directory_uri().'/img/linkedin.png' ?>" alt="Linkedin CTAMX">
+							</a>
+						<?php } ?>
+						<?php if( get_theme_mod('youtube-cta') ) {?>
+							<a href="<?php echo get_theme_mod('youtube-cta') ?>" target="_blank">
+								<img src="<?php echo get_template_directory_uri().'/img/youtube.png' ?>" alt="Youtube CTAMX">
+							</a>
+						<?php } ?>
+						<?php if( get_theme_mod('identificador-cta') ) {?>
+							<p><b>: <?php echo get_theme_mod('identificador-cta') ?></b></p>
+						<?php } ?>
 					</div>
 					<div class="social-adriana">
-						<a href="https://www.facebook.com/adrianacastromx/?ref=bookmarks" target="_blank">
-							<img src="<?php echo get_template_directory_uri().'/img/facebook.png' ?>" alt="Facebook Adriana Castro MX">
-						</a>
-						<a href="https://www.linkedin.com/in/adriana-castro-589465151/" target="_blank">
-							<img src="<?php echo get_template_directory_uri().'/img/linkedin.png' ?>" alt="Linkedin Adriana Castro MX">
-						</a>
-						<a href="#" target="_blank">
-							<img src="<?php echo get_template_directory_uri().'/img/youtube.png' ?>" alt="Youtube Adriana Castro MX">
-						</a>
-						<p><b>: adriana</b>castro<b>mx</b></p>
+						<?php if( get_theme_mod('facebook') ) {?>
+							<a href="<?php echo get_theme_mod('facebook') ?>" target="_blank">
+								<img src="<?php echo get_template_directory_uri().'/img/facebook.png' ?>" alt="Facebook Adriana Castro MX">
+							</a>
+						<?php } ?>
+						<?php if( get_theme_mod('linkedin') ) {?>
+							<a href="<?php echo get_theme_mod('linkedin') ?>" target="_blank">
+								<img src="<?php echo get_template_directory_uri().'/img/linkedin.png' ?>" alt="Linkedin Adriana Castro MX">
+							</a>
+						<?php } ?>
+						<?php if( get_theme_mod('youtube') ) {?>
+							<a href="<?php echo get_theme_mod('youtube') ?>" target="_blank">
+								<img src="<?php echo get_template_directory_uri().'/img/youtube.png' ?>" alt="Youtube Adriana Castro MX">
+							</a>
+						<?php } ?>
+						<?php if( get_theme_mod('identificador') ) {?>
+							<p><b>: <?php echo get_theme_mod('identificador') ?></b></p>
+						<?php } ?>
 					</div>
 				</div>
 			</div>

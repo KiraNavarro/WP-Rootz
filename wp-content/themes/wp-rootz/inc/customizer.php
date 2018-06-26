@@ -1,160 +1,5 @@
 <?php 
 	function wpr_customize_register( $wp_customize ) {
-		//** Logo **//
-		
-		//Set section 
-		$wp_customize->add_setting('logo_image', array(
-			'default' => get_template_directory_uri().'/img/site-logo.png',
-			'type' => 'theme_mod'
-		));
-		
-		$wp_customize->add_control(new WP_Customize_Image_Control(
-			$wp_customize, 'logo_image',
-			array(
-				'label' => __('Site Logo', 'wp-rootz'),
-				'section' => 'title_tagline',
-				'settings' => 'logo_image',
-				'priority' => 10
-			)
-		));
-		
-		//** Showcase **//
-		
-		//Set section
-		$wp_customize->add_section('showcase', array(
-			'title' => __('Showcase', 'wp-rootz'),
-			'description' => sprintf(__('Options for showcase', 'wp-rootz')),
-			'priority' => 130
-		));
-		
-		//Showcase Heading
-		$wp_customize->add_setting('showcase_heading', array(
-			'default' => _x('Custom Bootstrap Wordpress theme', 'wp-rootz'),
-			'type' => 'theme_mod'
-		));
-		
-		$wp_customize->add_control('showcase_heading', array(
-			'label' => __('Heading', 'wp-rootz'),
-			'section' => 'showcase',
-			'priority' => 1
-		));
-		
-		//Showcase Text
-		$wp_customize->add_setting('showcase_text', array(
-			'default' => _x('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'wp-rootz'),
-			'type' => 'theme_mod'
-		));
-		
-		$wp_customize->add_control('showcase_text', array(
-			'label' => __('Text', 'wp-rootz'),
-			'section' => 'showcase',
-			'priority' => 2
-		));
-		
-		//Showcase Button Text
-		$wp_customize->add_setting('showcase_btn_text', array(
-			'default' => _x('Read More', 'wp-rootz'),
-			'type' => 'theme_mod'
-		));
-		
-		$wp_customize->add_control('showcase_btn_text', array(
-			'label' => __('Button Text', 'wp-rootz'),
-			'section' => 'showcase',
-			'priority' => 3
-		));
-		
-		//Showcase Button URL
-		$wp_customize->add_setting('showcase_btn_url', array(
-			'default' => _x('http://test.com', 'wp-rootz'),
-			'type' => 'theme_mod'
-		));
-		
-		$wp_customize->add_control('showcase_btn_url', array(
-			'label' => __('Button URL', 'wp-rootz'),
-			'section' => 'showcase',
-			'priority' => 4
-		));
-		
-		//Showcase Image
-		$wp_customize->add_setting('showcase_image', array(
-			'default' => get_template_directory_uri().'/img/showcase.jpg', 'wp-rootz',
-			'type' => 'theme_mod'
-		));
-		
-		$wp_customize->add_control(new WP_Customize_Image_Control(
-			$wp_customize, 'logo_image',
-			array(
-				'label' => __('Showcase Image', 'wp-rootz'),
-				'section' => 'showcase',
-				'settings' => 'showcase_image',
-				'priority' => 5
-			)
-		));
-		
-		
-		//** About US **//
-		
-		//Set section 
-		$wp_customize->add_section('about', array(
-			'title' => __('Sobre Nosotros', 'wp-rootz'),
-			'description' => sprintf(__('Options for About us', 'wp-rootz')),
-			'priority' => 130
-		));
-		
-		// Title
-		$wp_customize->add_setting('about_heading', array(
-			'default' => _x('Sobre Nosotros', 'wp-rootz'),
-			'type' => 'theme_mod'
-		));
-		
-		$wp_customize->add_control('about_heading', array(
-			'label' => __('Título', 'wp-rootz'),
-			'section' => 'about',
-			'priority' => 1
-		));
-		
-		// Description Parrafo 1
-		$wp_customize->add_setting('about_description1', array(
-			'default' => _x('Esta es la descripción.', 'wp-rootz'),
-			'type' => 'theme_mod'
-		));
-		
-		$wp_customize->add_control('about_description1', array(
-			'label' => __('Descripción 1', 'wp-rootz'),
-			'type' => 'textarea',
-			'section' => 'about',
-			'priority' => 2
-		));
-		
-		// Description Parrafo 2
-		$wp_customize->add_setting('about_description2', array(
-			'default' => _x('Esta es la descripción.', 'wp-rootz'),
-			'type' => 'theme_mod'
-		));
-		
-		$wp_customize->add_control('about_description2', array(
-			'label' => __('Descripción 2', 'wp-rootz'),
-			'type' => 'textarea',
-			'section' => 'about',
-			'priority' => 3
-		));
-		
-		// Image
-		$wp_customize->add_setting('about_image', array(
-			'default' => get_template_directory_uri().'/img/about.jpg',
-			'type' => 'theme_mod'
-		));
-		
-		$wp_customize->add_control(new WP_Customize_Image_Control(
-			$wp_customize, 'about_image',
-			array(
-				'label' => __('Imagen', 'wp-rootz'),
-				'section' => 'about',
-				'settings' => 'about_image',
-				'priority' => 4
-			)
-		));
-		
 		//** Contact **//
 		
 		//Set section
@@ -164,21 +9,9 @@
 			'priority' => 140
 		));
 		
-		// Title
-		$wp_customize->add_setting('contact_heading', array(
-			'default' => _x('Contacto', 'wp-rootz'),
-			'type' => 'theme_mod'
-		));
-		
-		$wp_customize->add_control('contact_heading', array(
-			'label' => __('Título', 'wp-rootz'),
-			'section' => 'contact',
-			'priority' => 1
-		));
-		
 		// Address 
 		$wp_customize->add_setting('contact_address', array(
-			'default' => _x('Av.Siempre Viva #12, Springfield', 'wp-rootz'),
+			'default' => _x('', 'wp-rootz'),
 			'type' => 'theme_mod'
 		));
 		
@@ -190,7 +23,7 @@
 		
 		// Phone 
 		$wp_customize->add_setting('contact_phone', array(
-			'default' => _x('55-2654-8745', 'wp-rootz'),
+			'default' => _x('', 'wp-rootz'),
 			'type' => 'theme_mod'
 		));
 		
@@ -200,66 +33,123 @@
 			'priority' => 1
 		));
 		
+		// Mobile 
+		$wp_customize->add_setting('contact_mobile_phone', array(
+			'default' => _x('', 'wp-rootz'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('contact_mobile_phone', array(
+			'label' => __('Móvil', 'wp-rootz'),
+			'section' => 'contact',
+			'priority' => 1
+		));
+		
 		//** Social Networks **//
 		
 		//Set section
 		$wp_customize->add_section('social_networks', array(
 			'title' => __('Redes Sociales', 'wp-rootz'),
-			'description' => sprintf(__('Options for Social Networks', 'wp-rootz')),
+			'description' => sprintf(__('Redes Sociales', 'wp-rootz')),
 			'priority' => 140
 		));
 		
-		// Facebook
+		// Identificador CTA
+		$wp_customize->add_setting('identificador-cta', array(
+			'default' => _x('', 'wp-rootz'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('identificador-cta', array(
+			'label' => __('Identificador CTA', 'wp-rootz'),
+			'section' => 'social_networks',
+			'priority' => 1
+		));
+		
+		// Facebook CTA
+		$wp_customize->add_setting('facebook-cta', array(
+			'default' => _x('', 'wp-rootz'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('facebook-cta', array(
+			'label' => __('Facebook CTA', 'wp-rootz'),
+			'section' => 'social_networks',
+			'priority' => 2
+		));
+		
+		// Linkedin CTA
+		$wp_customize->add_setting('linkedin-cta', array(
+			'default' => _x('', 'wp-rootz'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('linkedin-cta', array(
+			'label' => __('LinkedIn CTA', 'wp-rootz'),
+			'section' => 'social_networks',
+			'priority' => 3
+		));
+		
+		// Youtube CTA
+		$wp_customize->add_setting('youtube-cta', array(
+			'default' => _x('', 'wp-rootz'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('youtube-cta', array(
+			'label' => __('Youtube CTA', 'wp-rootz'),
+			'section' => 'social_networks',
+			'priority' => 4
+		));
+		
+		// Identificador Adriana Castro
+		$wp_customize->add_setting('identificador', array(
+			'default' => _x('', 'wp-rootz'),
+			'type' => 'theme_mod'
+		));
+		
+		$wp_customize->add_control('identificador', array(
+			'label' => __('Identificador Adriana Castro', 'wp-rootz'),
+			'section' => 'social_networks',
+			'priority' => 5
+		));
+		
+		// Facebook  Adrina Castro
 		$wp_customize->add_setting('facebook', array(
-			'default' => _x('https://www.facebook.com/', 'wp-rootz'),
+			'default' => _x('', 'wp-rootz'),
 			'type' => 'theme_mod'
 		));
 		
 		$wp_customize->add_control('facebook', array(
-			'label' => __('Facebook', 'wp-rootz'),
+			'label' => __('Facebook Adrina Castro', 'wp-rootz'),
 			'section' => 'social_networks',
-			'priority' => 1
+			'priority' => 6
 		));
 		
-		// Facebook
+		// Linkedin  Adrina Castro
 		$wp_customize->add_setting('linkedin', array(
-			'default' => _x('https://www.linkedin.com/', 'wp-rootz'),
+			'default' => _x('', 'wp-rootz'),
 			'type' => 'theme_mod'
 		));
 		
 		$wp_customize->add_control('linkedin', array(
-			'label' => __('LinkedIn', 'wp-rootz'),
+			'label' => __('LinkedIn  Adrina Castro', 'wp-rootz'),
 			'section' => 'social_networks',
-			'priority' => 1
+			'priority' => 7
 		));
 		
-		/* Team 
-		$wp_customize->add_panel('equipo', array(
-			'priority'       => 131,
-			'title'          => __('Equipo', 'wp-rootz'),
-			'description'    => __('Set team info.', 'wp-rootz'),
-		));
-		
-		$wp_customize->add_section( 'doctor', array(
-			'priority'       => 1,
-			'title'          => __('Doctor', 'wp-rootz'),
-			'description'    =>  __('Doctor settings', 'wp-rootz'),
-			'panel'  => 'equipo',
-		));
-		
-		// Doctor Nombre
-		$wp_customize->add_setting('doctor-nombre', array(
-			'default' => _x('Esta es la descripción.', 'wp-rootz'),
+		// Youtube Adriana Castro
+		$wp_customize->add_setting('youtube', array(
+			'default' => _x('', 'wp-rootz'),
 			'type' => 'theme_mod'
 		));
-			
-		$wp_customize->add_control('doctor-nombre', array(
-			'label' => __('Nombre', 'wp-rootz'),
-			'type' => 'theme_mod',
-			'section' => 'doctor',
-			'priority' => 1
+		
+		$wp_customize->add_control('youtube', array(
+			'label' => __('Youtube Adriana Castro', 'wp-rootz'),
+			'section' => 'social_networks',
+			'priority' => 8
 		));
-		*/
+
 		
 	}
 	
@@ -276,5 +166,7 @@
 	
 	function prefix_remove_css_section( $wp_customize ) {
 		$wp_customize->remove_section( 'custom_css' );
+		$wp_customize->remove_panel( 'nav_menus'); 
+		$wp_customize->remove_panel( 'widgets');
 	}
 ?>
