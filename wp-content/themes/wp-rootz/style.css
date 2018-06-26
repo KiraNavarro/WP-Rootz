@@ -133,7 +133,7 @@ header {
 * Blog name and description
 */
 .blog-header {
-  padding: 1.25rem;
+  padding: 1.25rem 0;
   margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,9 +151,9 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   margin-right: 30px; }
   .blog-logo a {
     display: block;

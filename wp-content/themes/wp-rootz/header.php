@@ -17,27 +17,6 @@
 	<?php wp_head(); ?>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/comofunciona.js"></script>
 	<style media="screen">
-		.blog-logo {
-			background: url(
-				<?php if (is_front_page()) : ?>
-					<?php echo get_template_directory_uri().'/img/site-logo.png' ?>
-				<?php elseif (is_page('soluciones')) : ?>
-					<?php echo get_template_directory_uri().'/img/site-logo.png' ?>
-				<?php elseif (is_page('administracion-de-flotas'))  : ?>
-					<?php echo get_template_directory_uri().'/img/site-logo.png' ?>
-				<?php elseif (is_page('ubiq-bus'))  : ?>
-					<?php echo get_template_directory_uri().'/img/site-logo.png' ?>
-				<?php elseif (is_page('ubiq-logistics'))  : ?>
-					<?php echo get_template_directory_uri().'/img/site-logo-2.png' ?>
-				<?php elseif (is_page('gpss'))  : ?>
-					<?php echo get_template_directory_uri().'/img/site-logo-2.png' ?>
-				<?php elseif (is_page('iot'))  : ?>
-					<?php echo get_template_directory_uri().'/img/site-logo-2.png' ?>
-				<?php else : ?>
-					<?php echo get_template_directory_uri().'/img/site-logo.png' ?>
-				<?php endif; ?>) no-repeat;
-				background-size: contain;
-		}
 		@media (max-width: 450px) {
 			header {
 				background: url(

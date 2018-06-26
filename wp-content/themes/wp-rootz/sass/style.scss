@@ -166,7 +166,7 @@ header {
 * Blog name and description
 */
 .blog-header {
-	padding: 1.25rem;
+	padding: 1.25rem 0;
 	margin-bottom: 2rem;
 	display: flex;
 	flex-direction: row;
@@ -175,7 +175,7 @@ header {
 .blog-logo{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	margin-right: 30px;
 	a {
 		display: block;
