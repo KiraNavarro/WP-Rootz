@@ -40,7 +40,7 @@
 					<div class="review-comment">
 						<img class="quote-open" src="<?php echo get_template_directory_uri().'/img/quotes/quote-open.png' ?>">
 						<div class="review-text">
-							<span>Comprendieron perfectamente cuál era mi necesidad y cómo quería impactar en cada uno de mi eventos.</span>
+							<span>Comprendieron perfectamente cuál era mi necesidad y cómo quería impactar en cada uno de mis eventos.</span>
 							<p>Gracias a Call2action actualmente tenemos el doble de asistentes en comparación con años anteriores debido a los buenos resultados.</p>
 						</div>
 						<img class="quote-close" src="<?php echo get_template_directory_uri().'/img/quotes/quote-close.png' ?>">
