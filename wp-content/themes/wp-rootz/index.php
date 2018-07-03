@@ -7,7 +7,10 @@
 		<?php else : ?>
 			<p><?php __('No Post found'); ?></p>
 		<?php endif; ?>
-		
+		<nav class="blog-pagination">
+			<?php echo get_previous_posts_link( 'Anteriores', $max_page ); ?>
+			<?php echo get_next_posts_link( 'Siguientes', $max_page ); ?> 
+		</nav>
 	</main><!-- /.container -->
 	
 	<?php get_footer(); ?>

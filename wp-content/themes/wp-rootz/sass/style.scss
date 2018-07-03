@@ -230,6 +230,7 @@ header {
 /* Pagination */
 .blog-pagination {
 	margin-bottom: 4rem;
+	margin-top: 4em;
 }
 .blog-pagination > .btn {
 	border-radius: 2rem;
@@ -239,9 +240,8 @@ header {
 * Blog posts
 */
 .blog-post {
-	margin-bottom: 4rem;
+	margin-bottom: 4em;
 	width: 70%;
-	margin: auto;
 	h1, h2, h3, h4, h5, h6 {
 		font-family: secondary-font;
 		text-transform: uppercase;
@@ -499,7 +499,6 @@ form {
 }
 
 .blog-post {
-	margin: 0;
 	width: auto;
 }
 

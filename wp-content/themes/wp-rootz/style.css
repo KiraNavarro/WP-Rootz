@@ -197,7 +197,8 @@ header {
 
 /* Pagination */
 .blog-pagination {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  margin-top: 4em; }
 
 .blog-pagination > .btn {
   border-radius: 2rem; }
@@ -206,9 +207,8 @@ header {
 * Blog posts
 */
 .blog-post {
-  margin-bottom: 4rem;
-  width: 70%;
-  margin: auto; }
+  margin-bottom: 4em;
+  width: 70%; }
   .blog-post h1, .blog-post h2, .blog-post h3, .blog-post h4, .blog-post h5, .blog-post h6 {
     font-family: secondary-font;
     text-transform: uppercase; }
@@ -455,7 +455,6 @@ form {
     text-decoration: none; }
 
 .blog-post {
-  margin: 0;
   width: auto; }
 
 .thumb-single img {
