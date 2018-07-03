@@ -1,6 +1,12 @@
 /* Pagination */
 .blog-pagination {
 	margin-bottom: 4rem;
+	a {
+		color: $green;
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
 .blog-pagination > .btn {
 	border-radius: 2rem;
