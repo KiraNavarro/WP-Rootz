@@ -242,7 +242,6 @@ header {
 	margin-bottom: 4rem;
 	width: 70%;
 	margin: auto;
-	padding: 30px;
 	h1, h2, h3, h4, h5, h6 {
 		font-family: secondary-font;
 		text-transform: uppercase;
@@ -291,7 +290,7 @@ header {
 .blog-post-title {
 	margin-bottom: .25rem;
 	font-size: 2.5rem;
-	text-align: center;
+	text-align: left;
 }
 
 .blog-post-meta {
@@ -479,6 +478,34 @@ form {
 	img {
 		width: 600px;
 	}
+}
+
+/* Blog */
+.blog-wrapper, .blog-main {
+	margin: 0 auto;
+	width: 700px;
+}
+
+.blog-pagination a{
+	border: 1px solid $orange;
+	border-radius: 20px;
+	padding: .5em 1em;
+	color: $orange;
+	&:hover {
+		background-color: $orange;
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.blog-post {
+	margin: 0;
+	width: auto;
+}
+
+
+.thumb-single img{
+	width: 50%;
 }
 
 @import "movil";

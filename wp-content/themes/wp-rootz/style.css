@@ -208,8 +208,7 @@ header {
 .blog-post {
   margin-bottom: 4rem;
   width: 70%;
-  margin: auto;
-  padding: 30px; }
+  margin: auto; }
   .blog-post h1, .blog-post h2, .blog-post h3, .blog-post h4, .blog-post h5, .blog-post h6 {
     font-family: secondary-font;
     text-transform: uppercase; }
@@ -239,7 +238,7 @@ header {
 .blog-post-title {
   margin-bottom: .25rem;
   font-size: 2.5rem;
-  text-align: center; }
+  text-align: left; }
 
 .blog-post-meta {
   margin-bottom: 1.25rem;
@@ -439,6 +438,28 @@ form {
 
 .cf-images img {
   width: 600px; }
+
+/* Blog */
+.blog-wrapper, .blog-main {
+  margin: 0 auto;
+  width: 700px; }
+
+.blog-pagination a {
+  border: 1px solid #ef5a29;
+  border-radius: 20px;
+  padding: .5em 1em;
+  color: #ef5a29; }
+  .blog-pagination a:hover {
+    background-color: #ef5a29;
+    color: #fff;
+    text-decoration: none; }
+
+.blog-post {
+  margin: 0;
+  width: auto; }
+
+.thumb-single img {
+  width: 50%; }
 
 /* Movil */
 @media (min-width: 2000px) {

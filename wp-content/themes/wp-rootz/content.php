@@ -11,17 +11,27 @@
 	<p class="blog-post-meta">
 		<?php the_time('F j, Y g:i a'); ?> <a href="<?php echo get_author_posts_url(get_the_author_meta('ID'));?>"><?php the_author(); ?></a>
 	</p>
-	<div class="post-thumb">
-		<?php if( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail(); ?>
+	<?php if( has_post_thumbnail() ) : ?>
+		<?php if( is_single() ) : ?>
+			<div class="post-thumb thumb-single">
+				<?php the_post_thumbnail(); ?>
+			</div>
+		<?php else : ?>
+			<div class="post-thumb ">
+				<a href="<?php the_permalink(); ?>">
+					<?php the_post_thumbnail(); ?>
+				</a>
+			</div>
 		<?php endif; ?>
-	</div>
+	<?php endif; ?>
 	<?php if( is_single() ) : ?>
 		<?php the_content(); ?>
-		<?php comments_template(); ?>
 	<?php else : ?>
 		<?php the_excerpt(); ?>
 	<?php endif; ?>
-	
+	<nav class="blog-pagination">
+		<?php echo get_previous_posts_link( 'Anteriores', $max_page ); ?>
+		<?php echo get_next_posts_link( 'Siguientes', $max_page ); ?> 
+	</nav>
 	
 </div><!-- /.blog-post -->

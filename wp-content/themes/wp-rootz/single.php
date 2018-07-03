@@ -10,14 +10,11 @@
 				<?php endif; ?>
 				
 				<nav class="blog-pagination">
-					<a class="btn btn-outline-primary" href="#">Older</a>
-					<a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+					<?php previous_post_link('%link', 'Previo') ?>
+					<?php next_post_link('%link', 'Siguiente') ?>
 				</nav>
 				
 			</div><!-- /.blog-main -->
-			
-			<!-- sidebar -->
-			<?php get_sidebar(); ?>
 	</main><!-- /.container -->
 	
 	<?php get_footer(); ?>
