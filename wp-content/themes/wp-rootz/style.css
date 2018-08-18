@@ -461,14 +461,34 @@ form {
   width: 50%; }
 
 /* Movil */
-@media (min-width: 2000px) {
+@media (max-width: 2900px) {
   header {
-    height: 1050px;
-    margin-bottom: 50px; } }
+    height: 1250px;
+    margin-bottom: 0px; } }
+
+@media (max-width: 2700px) {
+  header {
+    height: 1150px;
+    margin-bottom: 0px; } }
+
+@media (max-width: 2500px) {
+  header {
+    height: 1000px;
+    margin-bottom: 0px; } }
+
+@media (max-width: 2000px) {
+  header {
+    height: 950px;
+    margin-bottom: 0px; } }
+
+@media (max-width: 1750px) {
+  header {
+    height: 750px;
+    margin-bottom: 0px; } }
 
 @media (max-width: 1600px) {
   header {
-    height: 650px;
+    height: 600px;
     margin-bottom: 0px; } }
 
 @media (max-width: 1300px) {
@@ -498,7 +518,6 @@ form {
   .blog-logo {
     margin-right: 0;
     width: 30%;
-    background-color: pink;
     opacity: .5; }
   .blog-info {
     font-size: .7em; }
